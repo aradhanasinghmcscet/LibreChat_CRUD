@@ -1,0 +1,61 @@
+version: 1
+interface:
+  helpAndFaqURL: ""
+  customFooter: ""
+  modelSpecs: {}
+  sharedLinksEnabled: false
+  publicSharedLinksEnabled: false
+  analyticsGtmId: ""
+  instanceProjectId: "local"
+  bundlerURL: ""
+  staticBundlerURL: ""
+  webSearch:
+    searchProvider: ""
+    scraperType: ""
+    rerankerType: ""
+  mcpServers: {}
+  mcpPlaceholder: ""
+config:
+  security:
+    allowUnverifiedEmailLogin: true
+
+  endpoints:
+    all:
+      apiKey: ""
+    openAI:
+      apiKey: ""
+    google:
+      apiKey: ""
+    anthropic:
+      apiKey: ""
+    azureOpenAI:
+      apiKey: ""
+      instanceName: ""
+    azureAssistants:
+      apiKey: ""
+      instanceName: ""
+  fileStrategy: local
+  imageOutputType: PNG
+  secureImageLinks: true
+  includedTools: []
+  filteredTools: []
+  balance:
+    enabled: false
+    providers: []
+  speech:
+    tts:
+      provider: ""
+      apiKey: ""
+    stt:
+      provider: ""
+      apiKey: ""
+  rateLimits:
+    enabled: false
+    maxRequests: 100
+    windowMs: 86400000
+  cache: false
+  ocr:
+    mistralModel: ""
+    apiKey: ""
+    baseURL: ""
+    secretKey: 97f8dc8ce74d4b2e2e4a4287255ad8fe0c1032e7dfd5ec4763a08562a381d3ab

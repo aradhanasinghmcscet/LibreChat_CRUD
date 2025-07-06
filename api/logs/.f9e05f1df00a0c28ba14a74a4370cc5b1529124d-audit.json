@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/api/logs/.f9e05f1df00a0c28ba14a74a4370cc5b1529124d-audit.json",
+    "files": [
+        {
+            "date": 1751820638055,
+            "name": "/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/api/logs/meiliSync-2025-07-06.log",
+            "hash": "f64936a56563b41afe72f984ec98b1bf55ad11801b5448e8f58d30193485fb42"
+        }
+    ],
+    "hashType": "sha256"
+}

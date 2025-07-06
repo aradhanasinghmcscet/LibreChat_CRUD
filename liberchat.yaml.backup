@@ -1,0 +1,4 @@
+version: 1
+config:
+  siteKey: 023f38f9fe8b394d54937eb7c86cbc8c691a6c2a83d594f62cc106653903d623
+  secretKey: 97f8dc8ce74d4b2e2e4a4287255ad8fe0c1032e7dfd5ec4763a08562a381d3ab
