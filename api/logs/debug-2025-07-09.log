@@ -572,3 +572,211 @@
 2025-07-09T05:33:39.974Z info: Listed 10 CRUDServices
 2025-07-09T06:11:38.084Z info: Listed 10 CRUDServices
 2025-07-09T06:22:36.717Z info: Listed 10 CRUDServices
+2025-07-09T08:24:02.182Z info: [Optional] Redis not initialized.
+2025-07-09T08:24:03.602Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:24:03.899Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:24:03.899Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:24:03.899Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:24:03.899Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:24:03.899Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:24:03.899Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-09T08:24:03.938Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:28:14.475Z info: [Optional] Redis not initialized.
+2025-07-09T08:28:15.733Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:28:16.203Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:28:16.203Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:28:16.203Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:28:16.203Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:28:16.203Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:28:16.203Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-09T08:28:16.213Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:33:32.848Z info: [Optional] Redis not initialized.
+2025-07-09T08:33:34.014Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:33:34.197Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:33:34.198Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:33:34.198Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:33:34.198Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:33:34.198Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:33:34.198Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-09T08:33:34.207Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:35:00.346Z info: [Optional] Redis not initialized.
+2025-07-09T08:35:02.278Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:35:06.213Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:35:06.213Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:35:06.213Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:35:06.213Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:35:06.213Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:35:06.214Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-09T08:35:06.240Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:36:41.597Z info: [Optional] Redis not initialized.
+2025-07-09T08:36:42.853Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:36:43.055Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:36:43.056Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:36:43.056Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:36:43.056Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:36:43.056Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:36:43.056Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-09T08:36:43.064Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:43:27.293Z info: [Optional] Redis not initialized.
+2025-07-09T08:43:28.613Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:44:33.007Z info: [Optional] Redis not initialized.
+2025-07-09T08:44:34.314Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:44:34.613Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:44:34.613Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:44:34.613Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:44:34.613Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:44:34.613Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:44:34.614Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T08:44:34.648Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:45:44.847Z info: [Optional] Redis not initialized.
+2025-07-09T08:45:46.317Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:45:46.856Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:45:46.857Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:45:46.857Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:45:46.857Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:45:46.857Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:45:46.857Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T08:45:46.869Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:46:45.037Z info: [Optional] Redis not initialized.
+2025-07-09T08:46:46.260Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:46:46.935Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:46:46.935Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:46:46.935Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:46:46.935Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:46:46.935Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:46:46.936Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T08:46:46.954Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:47:19.238Z info: [Optional] Redis not initialized.
+2025-07-09T08:47:20.257Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:47:20.459Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:47:20.459Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:47:20.459Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:47:20.459Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:47:20.459Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:47:20.459Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T08:47:20.470Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:48:23.963Z info: [Optional] Redis not initialized.
+2025-07-09T08:48:25.378Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:48:25.618Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:48:25.618Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:48:25.618Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:48:25.618Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:48:25.618Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:48:25.618Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T08:48:25.654Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:49:14.148Z info: [Optional] Redis not initialized.
+2025-07-09T08:49:15.525Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:49:15.666Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:49:15.666Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:49:15.666Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:49:15.667Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:49:15.667Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:49:15.667Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T08:49:15.675Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:50:16.501Z info: [Optional] Redis not initialized.
+2025-07-09T08:50:17.914Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:50:18.222Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:50:18.222Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:50:18.222Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:50:18.222Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:50:18.222Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:50:18.223Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T08:50:18.238Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:51:37.966Z info: [Optional] Redis not initialized.
+2025-07-09T08:51:39.403Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:51:39.539Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:51:39.539Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:51:39.539Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:51:39.539Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:51:39.539Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:51:39.540Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T08:51:39.550Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:53:33.617Z info: [Optional] Redis not initialized.
+2025-07-09T08:53:34.823Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:53:34.952Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:53:34.952Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:53:34.952Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:53:34.952Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:53:34.953Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:53:34.953Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T08:53:34.960Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:54:22.871Z info: [Optional] Redis not initialized.
+2025-07-09T08:54:23.910Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:54:24.091Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:54:24.092Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:54:24.092Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:54:24.092Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:54:24.092Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:54:24.092Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T08:54:24.101Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:54:55.550Z info: [Optional] Redis not initialized.
+2025-07-09T08:54:56.555Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:54:56.724Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:54:56.724Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:54:56.724Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:54:56.724Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:54:56.724Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:54:56.725Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T08:54:56.733Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:57:16.127Z info: [Optional] Redis not initialized.
+2025-07-09T08:57:17.483Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:57:17.852Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:57:17.852Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:57:17.852Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:57:17.852Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:57:17.852Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:57:17.852Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T08:57:17.870Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:57:51.081Z error: [loginController] Failed to create session
+2025-07-09T08:59:38.374Z info: [Optional] Redis not initialized.
+2025-07-09T08:59:39.594Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T08:59:39.795Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T08:59:39.795Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T08:59:39.795Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T08:59:39.795Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T08:59:39.795Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T08:59:39.795Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T08:59:39.803Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T08:59:59.205Z error: [loginController] Failed to create session
+2025-07-09T09:00:52.067Z info: [Optional] Redis not initialized.
+2025-07-09T09:00:53.202Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T09:00:53.349Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T09:00:53.349Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T09:00:53.349Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T09:00:53.349Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T09:00:53.349Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T09:00:53.350Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T09:00:53.357Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T09:01:19.810Z error: [loginController] Failed to create session
+2025-07-09T09:03:29.497Z info: [Optional] Redis not initialized.
+2025-07-09T09:03:31.118Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T09:03:31.310Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T09:03:31.318Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T09:03:31.318Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T09:03:31.322Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T09:03:31.322Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T09:03:31.327Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T09:03:31.409Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T09:03:50.365Z info: [Optional] Redis not initialized.
+2025-07-09T09:03:59.714Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T09:04:02.313Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T09:04:02.313Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T09:04:02.314Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T09:04:02.314Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T09:04:02.314Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T09:04:02.316Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T09:04:02.341Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T09:04:25.574Z debug: [requireLocalAuth] Error: No user
+2025-07-09T09:04:50.465Z debug: [requireLocalAuth] Error: No user
+2025-07-09T09:04:55.807Z debug: [requireLocalAuth] Error: No user
+2025-07-09T09:05:03.968Z error: [loginController] Failed to create session
+2025-07-09T09:05:48.995Z error: [loginController] Failed to create session
+2025-07-09T09:08:38.855Z info: [Optional] Redis not initialized.
+2025-07-09T09:08:43.095Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T09:08:43.888Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T09:08:43.892Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T09:08:43.892Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T09:08:43.892Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T09:08:43.892Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T09:08:43.895Z warn: RAG API is either not running or not reachable at , you may experience errors with file uploads.
+2025-07-09T09:08:43.921Z info: Turnstile is DISABLED (no siteKey provided).
