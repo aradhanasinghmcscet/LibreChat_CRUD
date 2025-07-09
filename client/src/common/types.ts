@@ -27,6 +27,14 @@ export enum STTEndpoints {
   external = 'external',
 }
 
+export interface ListParams {
+  page?: number;
+  limit?: number;
+  search?: string;
+  sort?: string;
+  order?: 'asc' | 'desc';
+}
+
 export enum TTSEndpoints {
   browser = 'browser',
   external = 'external',

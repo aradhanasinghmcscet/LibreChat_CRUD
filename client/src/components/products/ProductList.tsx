@@ -1,13 +1,19 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useApi } from '../../hooks/useApi';
 import {
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogActions,
+  Dialog as MuiDialog,
+  DialogTitle as MuiDialogTitle,
+  DialogContent as MuiDialogContent,
+  DialogActions as MuiDialogActions,
   Button,
   Pagination
 } from '@mui/material';
+
+// Use PascalCase for Dialog components
+const Dialog = MuiDialog as React.FC<any>;
+const DialogTitle = MuiDialogTitle as React.FC<any>;
+const DialogContent = MuiDialogContent as React.FC<any>;
+const DialogActions = MuiDialogActions as React.FC<any>;
 import { Search as LucideSearch, Plus, Edit2, Trash2 } from "lucide-react";
 import type { LucideProps } from "lucide-react";
 import './styles.css';
@@ -21,9 +27,9 @@ const TrashIcon = Trash2 as React.FC<LucideProps>;
 interface Product {
   _id?: string;
   name: string;
-  price: number;
+  price: string;
   description: string;
-  quantity: number;
+  quantity: string;
   createdAt?: Date;
   updatedAt?: Date;
 }
@@ -36,46 +42,33 @@ interface FormValues {
 }
 
 const ProductList: React.FC = () => {
-  const {
-    error,
-    create,
-    read,
-    update,
-    remove
-  } = useApi();
+  const { error, create, read, update, remove } = useApi();
 
   const [products, setProducts] = useState<Product[]>([]);
-  const [localError, setLocalError] = useState<string | null>(null);
-  const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [productsPerPage, setProductsPerPage] = useState(3);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [dialogType, setDialogType] = useState<'add' | 'edit'>('add');
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [formValues, setFormValues] = useState<FormValues>({
-    name: '',
-    price: '',
-    description: '',
-    quantity: '0'
-  });
+  const [formValues, setFormValues] = useState<Product>({} as Product);
   const [loading, setLoading] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [localError, setLocalError] = useState<string | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   const fetchProducts = async () => {
     try {
       setLoading(true);
       console.log('Fetching products with page:', currentPage, 'limit:', productsPerPage);
       
-      // Try direct fetch to see raw response
-      const response = await fetch('/api/products', {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        }
+      // Use the API service instead of direct fetch
+      const response = await read('/api/products', '', {
+        page: currentPage,
+        limit: productsPerPage
       });
       
-      const data = await response.json();
-      console.log('Raw API Response:', JSON.stringify(data, null, 2));
+      const data = response.data;
+      console.log('API Response:', JSON.stringify(data, null, 2));
       
       // Handle different response formats
       const productsData = data?.items || data?.products || data || [];
@@ -111,7 +104,7 @@ const ProductList: React.FC = () => {
     const { name, value } = e.target;
     setFormValues(prev => ({
       ...prev,
-      [name]: value
+      [name]: name === 'price' || name === 'quantity' ? value : prev[name]
     }));
   };
 
@@ -119,16 +112,16 @@ const ProductList: React.FC = () => {
     setLocalError(null);
     const { name, price, description, quantity } = formValues;
 
-    if (!name || !price || isNaN(parseFloat(price))) {
+    if (!name || !price || isNaN(Number(price))) {
       setLocalError('Please enter a valid name and price');
       return;
     }
 
     const productData = {
       name,
-      price: parseFloat(price),
+      price: Number(price),
       description: description || '',
-      quantity: parseInt(quantity)
+      quantity: Number(quantity)
     };
 
     await create('/products', productData);
@@ -141,16 +134,16 @@ const ProductList: React.FC = () => {
     setLocalError(null);
     const { name, price, description, quantity } = formValues;
 
-    if (!name || !price || isNaN(parseFloat(price))) {
+    if (!name || !price || isNaN(Number(price))) {
       setLocalError('Please enter a valid name and price');
       return;
     }
 
     const updatedData = {
       name,
-      price: parseFloat(price),
+      price: Number(price),
       description: description || '',
-      quantity: parseInt(quantity)
+      quantity: Number(quantity)
     };
 
     await update('/products', selectedProduct._id!, updatedData);
@@ -205,7 +198,7 @@ const ProductList: React.FC = () => {
   };
 
   const handlePageSizeChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    setProductsPerPage(event.target.value as number);
+    setProductsPerPage(Number(event.target.value));
     setCurrentPage(1);
     fetchProducts();
   };
@@ -256,9 +249,9 @@ const ProductList: React.FC = () => {
         />
       </div>
 
-      {localError && (
+      {(localError || error !== null) && (
         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-          {localError}
+          {localError || 'Failed to fetch products'}
         </div>
       )}
 
@@ -287,7 +280,7 @@ const ProductList: React.FC = () => {
         ))}
       </div>
 
-      {filteredProducts.length === 0 && (
+      {filteredProducts.length === 0 && !loading && (
         <div className="text-center py-4 text-gray-500">
           No products found
         </div>
@@ -329,7 +322,7 @@ const ProductList: React.FC = () => {
                 type="text"
                 id="name"
                 name="name"
-                value={formValues.name}
+                value={formValues.name || ''}
                 onChange={handleInputChange}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                 required
@@ -343,7 +336,7 @@ const ProductList: React.FC = () => {
                 type="number"
                 id="price"
                 name="price"
-                value={formValues.price}
+                value={Number(formValues.price)}
                 onChange={handleInputChange}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                 required
@@ -355,13 +348,13 @@ const ProductList: React.FC = () => {
               <label htmlFor="description" className="block text-sm font-medium text-gray-700">
                 Description
               </label>
-              <textarea
+              <input
+                type="text"
                 id="description"
                 name="description"
-                value={formValues.description}
+                value={formValues.description || ''}
                 onChange={handleInputChange}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                rows={3}
               />
             </div>
             <div>
@@ -372,7 +365,7 @@ const ProductList: React.FC = () => {
                 type="number"
                 id="quantity"
                 name="quantity"
-                value={formValues.quantity}
+                value={Number(formValues.quantity)}
                 onChange={handleInputChange}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                 required
@@ -382,9 +375,6 @@ const ProductList: React.FC = () => {
           </form>
         </DialogContent>
         <DialogActions>
-          <Button onClick={closeDialog} color="primary">
-            Cancel
-          </Button>
           <Button onClick={dialogType === 'add' ? handleAddProduct : handleEditProduct} color="primary" variant="contained">
             {dialogType === 'add' ? 'Add' : 'Save'}
           </Button>

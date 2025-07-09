@@ -8,89 +8,75 @@ interface ListParams {
   [key: string]: any;
 }
 
+interface Product {
+  _id?: string;
+  name: string;
+  price: string;
+  description: string;
+  quantity: string;
+  createdAt?: Date;
+  updatedAt?: Date;
+}
+
 const API_URL = process.env.REACT_APP_API_URL || '/api';
 
-export const useApi = () => {
-  const { setError } = useApiErrorBoundary();
+interface ApiMethods {
+  create: (endpoint: string, data: any) => Promise<any>;
+  read: (endpoint: string, id: string | number, params?: any) => Promise<any>;
+  update: (endpoint: string, id: string | number, data: any) => Promise<any>;
+  remove: (endpoint: string, id: string | number) => Promise<any>;
+  list: (endpoint: string, params?: ListParams) => Promise<any>;
+  search: (endpoint: string, query: any) => Promise<any>;
+}
+
+export const useApi = (): { loading: boolean; error: null } & ApiMethods => {
   const [loading, setLoading] = useState(false);
-  const [error, setErrorState] = useState<null | Error>(null);
+  const [error, setError] = useState<null>(null);
 
   const makeRequest = async (method, endpoint, data = null, params = {}) => {
     try {
       setLoading(true);
-      const response = await axios({
-        method,
-        url: `${API_URL}${endpoint}`,
-        data,
-        params,
-      });
-      // Handle pagination response
+      const response = await axios({ method, url: `${API_URL}${endpoint}`, data, params });
       if (response.data && response.data.items) {
-        return response.data;
+        const processedData = response.data.items.map((item: Product) => ({
+          ...item,
+          price: item.price.toString(),
+          quantity: item.quantity.toString()
+        }));
+        return { ...response.data, items: processedData };
       }
       return response.data;
     } catch (err: any) {
       const error = err.response ? err.response.data : err;
-      setErrorState(error);
-      setError(error);
+      setError(null);
       throw error;
     } finally {
       setLoading(false);
     }
   };
 
-  // CRUD Operations
-  const create = useCallback(async (endpoint, data) => {
-    return makeRequest('post', endpoint, data);
-  }, []);
-
-  const read = useCallback(async (endpoint, id, params = {}) => {
-    return makeRequest('get', `${endpoint}/${id}`, null, params);
-  }, []);
-
-  const update = useCallback(async (endpoint, id, data) => {
-    return makeRequest('put', `${endpoint}/${id}`, data);
-  }, []);
-
-  const del = useCallback(async (endpoint, id) => {
-    try {
-      setLoading(true);
-      const response = await axios.delete(`${API_URL}${endpoint}/${id}`);
-      return response.data;
-    } catch (err: any) {
-      const error = err.response ? err.response.data : err;
-      setErrorState(error);
-      setError(error);
-      throw error;
-    } finally {
-      setLoading(false);
-    }
-  }, []);
-
-  // List with pagination
-  const list = useCallback(async (endpoint: string, params: ListParams = {}) => {
-    // Add default pagination params if not provided
-    const paginationParams = {
-      limit: params.limit || 10,
-      skip: params.skip || 0,
-      ...params
-    };
-    return makeRequest('get', endpoint, null, paginationParams);
-  }, []);
-
-  // Search
-  const search = useCallback(async (endpoint, query) => {
-    return makeRequest('get', `${endpoint}/search`, null, { query });
-  }, []);
-
   return {
     loading,
     error,
-    create,
-    read,
-    update,
-    list,
-    search,
-    del
+    create: useCallback(async (endpoint, data) => {
+      const processedData = {
+        ...data,
+        price: Number(data.price),
+        quantity: Number(data.quantity)
+      };
+      return makeRequest('post', endpoint, processedData);
+    }, []),
+    read: useCallback(async (endpoint, id, params = {}) => makeRequest('get', `${endpoint}/${id}`, null, params), []),
+    update: useCallback(async (endpoint, id, data) => {
+      const processedData = {
+        ...data,
+        price: Number(data.price),
+        quantity: Number(data.quantity)
+      };
+      return makeRequest('put', `${endpoint}/${id}`, processedData);
+    }, []),
+    remove: useCallback(async (endpoint, id) => makeRequest('delete', `${endpoint}/${id}`), []),
+    list: useCallback(async (endpoint, params = {}) => makeRequest('get', endpoint, null, params), []),
+    search: useCallback(async (endpoint, query) => makeRequest('get', endpoint, null, { query }), [])
   };
 };

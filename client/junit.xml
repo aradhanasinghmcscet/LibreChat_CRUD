@@ -1,0 +1,2739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="32" failures="19" errors="0" time="11.418">
+  <testsuite name="ProductForm Component" errors="0" failures="10" skipped="0" timestamp="2025-07-09T15:07:04" time="1.37" tests="14">
+    <testcase classname="ProductForm Component renders add form correctly" name="ProductForm Component renders add form correctly" time="0.396">
+      <failure>TestingLibraryElementError: Unable to find a label with the text of: Product Name
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;dialog
+      maxwidth=&quot;sm&quot;
+      open=&quot;&quot;
+    &gt;
+      &lt;dialogtitle&gt;
+        Add New Product
+      &lt;/dialogtitle&gt;
+      &lt;form&gt;
+        &lt;dialogcontent&gt;
+          &lt;textfield
+            label=&quot;Product Name&quot;
+            margin=&quot;dense&quot;
+            name=&quot;name&quot;
+            required=&quot;&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Price&quot;
+            margin=&quot;dense&quot;
+            name=&quot;price&quot;
+            required=&quot;&quot;
+            type=&quot;number&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Description&quot;
+            margin=&quot;dense&quot;
+            name=&quot;description&quot;
+            rows=&quot;4&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Status&quot;
+            margin=&quot;dense&quot;
+            name=&quot;status&quot;
+            type=&quot;text&quot;
+            value=&quot;active&quot;
+          /&gt;
+        &lt;/dialogcontent&gt;
+        &lt;dialogactions&gt;
+          &lt;button&gt;
+            Cancel
+          &lt;/button&gt;
+          &lt;button
+            color=&quot;primary&quot;
+            type=&quot;submit&quot;
+            variant=&quot;contained&quot;
+          &gt;
+            Create
+          &lt;/button&gt;
+        &lt;/dialogactions&gt;
+      &lt;/form&gt;
+    &lt;/dialog&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/queries/label-text.js:111:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByLabelText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductForm.test.tsx:36:19)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="ProductForm Component renders edit form correctly" name="ProductForm Component renders edit form correctly" time="0.005">
+      <failure>TestingLibraryElementError: Unable to find a label with the text of: Product Name
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;dialog
+      maxwidth=&quot;sm&quot;
+      open=&quot;&quot;
+    &gt;
+      &lt;dialogtitle&gt;
+        Edit Product
+      &lt;/dialogtitle&gt;
+      &lt;form&gt;
+        &lt;dialogcontent&gt;
+          &lt;textfield
+            label=&quot;Product Name&quot;
+            margin=&quot;dense&quot;
+            name=&quot;name&quot;
+            required=&quot;&quot;
+            type=&quot;text&quot;
+            value=&quot;Test Product&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Price&quot;
+            margin=&quot;dense&quot;
+            name=&quot;price&quot;
+            required=&quot;&quot;
+            type=&quot;number&quot;
+            value=&quot;100&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Description&quot;
+            margin=&quot;dense&quot;
+            name=&quot;description&quot;
+            rows=&quot;4&quot;
+            type=&quot;text&quot;
+            value=&quot;Test description&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Status&quot;
+            margin=&quot;dense&quot;
+            name=&quot;status&quot;
+            type=&quot;text&quot;
+            value=&quot;active&quot;
+          /&gt;
+        &lt;/dialogcontent&gt;
+        &lt;dialogactions&gt;
+          &lt;button&gt;
+            Cancel
+          &lt;/button&gt;
+          &lt;button
+            color=&quot;primary&quot;
+            type=&quot;submit&quot;
+            variant=&quot;contained&quot;
+          &gt;
+            Update
+          &lt;/button&gt;
+        &lt;/dialogactions&gt;
+      &lt;/form&gt;
+    &lt;/dialog&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/queries/label-text.js:111:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByLabelText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductForm.test.tsx:45:19)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="ProductForm Component handles form submission" name="ProductForm Component handles form submission" time="0.008">
+      <failure>TestingLibraryElementError: Unable to find a label with the text of: Product Name
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;dialog
+      maxwidth=&quot;sm&quot;
+      open=&quot;&quot;
+    &gt;
+      &lt;dialogtitle&gt;
+        Add New Product
+      &lt;/dialogtitle&gt;
+      &lt;form&gt;
+        &lt;dialogcontent&gt;
+          &lt;textfield
+            label=&quot;Product Name&quot;
+            margin=&quot;dense&quot;
+            name=&quot;name&quot;
+            required=&quot;&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Price&quot;
+            margin=&quot;dense&quot;
+            name=&quot;price&quot;
+            required=&quot;&quot;
+            type=&quot;number&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Description&quot;
+            margin=&quot;dense&quot;
+            name=&quot;description&quot;
+            rows=&quot;4&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Status&quot;
+            margin=&quot;dense&quot;
+            name=&quot;status&quot;
+            type=&quot;text&quot;
+            value=&quot;active&quot;
+          /&gt;
+        &lt;/dialogcontent&gt;
+        &lt;dialogactions&gt;
+          &lt;button&gt;
+            Cancel
+          &lt;/button&gt;
+          &lt;button
+            color=&quot;primary&quot;
+            type=&quot;submit&quot;
+            variant=&quot;contained&quot;
+          &gt;
+            Create
+          &lt;/button&gt;
+        &lt;/dialogactions&gt;
+      &lt;/form&gt;
+    &lt;/dialog&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/queries/label-text.js:111:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByLabelText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductForm.test.tsx:54:29)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="ProductForm Component handles form validation" name="ProductForm Component handles form validation" time="0.01">
+      <failure>TestingLibraryElementError: Unable to find an element with the text: /Please enter a name/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;dialog
+      maxwidth=&quot;sm&quot;
+      open=&quot;&quot;
+    &gt;
+      &lt;dialogtitle&gt;
+        Add New Product
+      &lt;/dialogtitle&gt;
+      &lt;form&gt;
+        &lt;dialogcontent&gt;
+          &lt;textfield
+            label=&quot;Product Name&quot;
+            margin=&quot;dense&quot;
+            name=&quot;name&quot;
+            required=&quot;&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Price&quot;
+            margin=&quot;dense&quot;
+            name=&quot;price&quot;
+            required=&quot;&quot;
+            type=&quot;number&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Description&quot;
+            margin=&quot;dense&quot;
+            name=&quot;description&quot;
+            rows=&quot;4&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Status&quot;
+            margin=&quot;dense&quot;
+            name=&quot;status&quot;
+            type=&quot;text&quot;
+            value=&quot;active&quot;
+          /&gt;
+        &lt;/dialogcontent&gt;
+        &lt;dialogactions&gt;
+          &lt;button&gt;
+            Cancel
+          &lt;/button&gt;
+          &lt;button
+            color=&quot;primary&quot;
+            type=&quot;submit&quot;
+            variant=&quot;contained&quot;
+          &gt;
+            Create
+          &lt;/button&gt;
+        &lt;/dialogactions&gt;
+      &lt;/form&gt;
+    &lt;/dialog&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:76:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductForm.test.tsx:76:19)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="ProductForm Component handles form close" name="ProductForm Component handles form close" time="0.005">
+    </testcase>
+    <testcase classname="ProductForm Component handles edit form submission" name="ProductForm Component handles edit form submission" time="0.005">
+      <failure>TestingLibraryElementError: Unable to find a label with the text of: /Name/i
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;dialog
+      maxwidth=&quot;sm&quot;
+      open=&quot;&quot;
+    &gt;
+      &lt;dialogtitle&gt;
+        Edit Product
+      &lt;/dialogtitle&gt;
+      &lt;form&gt;
+        &lt;dialogcontent&gt;
+          &lt;textfield
+            label=&quot;Product Name&quot;
+            margin=&quot;dense&quot;
+            name=&quot;name&quot;
+            required=&quot;&quot;
+            type=&quot;text&quot;
+            value=&quot;Test Product&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Price&quot;
+            margin=&quot;dense&quot;
+            name=&quot;price&quot;
+            required=&quot;&quot;
+            type=&quot;number&quot;
+            value=&quot;100&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Description&quot;
+            margin=&quot;dense&quot;
+            name=&quot;description&quot;
+            rows=&quot;4&quot;
+            type=&quot;text&quot;
+            value=&quot;Test description&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Status&quot;
+            margin=&quot;dense&quot;
+            name=&quot;status&quot;
+            type=&quot;text&quot;
+            value=&quot;active&quot;
+          /&gt;
+        &lt;/dialogcontent&gt;
+        &lt;dialogactions&gt;
+          &lt;button&gt;
+            Cancel
+          &lt;/button&gt;
+          &lt;button
+            color=&quot;primary&quot;
+            type=&quot;submit&quot;
+            variant=&quot;contained&quot;
+          &gt;
+            Update
+          &lt;/button&gt;
+        &lt;/dialogactions&gt;
+      &lt;/form&gt;
+    &lt;/dialog&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/queries/label-text.js:111:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByLabelText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductForm.test.tsx:94:29)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="ProductForm Component handles invalid price input" name="ProductForm Component handles invalid price input" time="0.003">
+      <failure>TestingLibraryElementError: Unable to find a label with the text of: /Name/i
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;dialog
+      maxwidth=&quot;sm&quot;
+      open=&quot;&quot;
+    &gt;
+      &lt;dialogtitle&gt;
+        Add New Product
+      &lt;/dialogtitle&gt;
+      &lt;form&gt;
+        &lt;dialogcontent&gt;
+          &lt;textfield
+            label=&quot;Product Name&quot;
+            margin=&quot;dense&quot;
+            name=&quot;name&quot;
+            required=&quot;&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Price&quot;
+            margin=&quot;dense&quot;
+            name=&quot;price&quot;
+            required=&quot;&quot;
+            type=&quot;number&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Description&quot;
+            margin=&quot;dense&quot;
+            name=&quot;description&quot;
+            rows=&quot;4&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Status&quot;
+            margin=&quot;dense&quot;
+            name=&quot;status&quot;
+            type=&quot;text&quot;
+            value=&quot;active&quot;
+          /&gt;
+        &lt;/dialogcontent&gt;
+        &lt;dialogactions&gt;
+          &lt;button&gt;
+            Cancel
+          &lt;/button&gt;
+          &lt;button
+            color=&quot;primary&quot;
+            type=&quot;submit&quot;
+            variant=&quot;contained&quot;
+          &gt;
+            Create
+          &lt;/button&gt;
+        &lt;/dialogactions&gt;
+      &lt;/form&gt;
+    &lt;/dialog&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/queries/label-text.js:111:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByLabelText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductForm.test.tsx:111:29)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="ProductForm Component handles invalid quantity input" name="ProductForm Component handles invalid quantity input" time="0.004">
+      <failure>TestingLibraryElementError: Unable to find a label with the text of: /Name/i
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;dialog
+      maxwidth=&quot;sm&quot;
+      open=&quot;&quot;
+    &gt;
+      &lt;dialogtitle&gt;
+        Add New Product
+      &lt;/dialogtitle&gt;
+      &lt;form&gt;
+        &lt;dialogcontent&gt;
+          &lt;textfield
+            label=&quot;Product Name&quot;
+            margin=&quot;dense&quot;
+            name=&quot;name&quot;
+            required=&quot;&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Price&quot;
+            margin=&quot;dense&quot;
+            name=&quot;price&quot;
+            required=&quot;&quot;
+            type=&quot;number&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Description&quot;
+            margin=&quot;dense&quot;
+            name=&quot;description&quot;
+            rows=&quot;4&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Status&quot;
+            margin=&quot;dense&quot;
+            name=&quot;status&quot;
+            type=&quot;text&quot;
+            value=&quot;active&quot;
+          /&gt;
+        &lt;/dialogcontent&gt;
+        &lt;dialogactions&gt;
+          &lt;button&gt;
+            Cancel
+          &lt;/button&gt;
+          &lt;button
+            color=&quot;primary&quot;
+            type=&quot;submit&quot;
+            variant=&quot;contained&quot;
+          &gt;
+            Create
+          &lt;/button&gt;
+        &lt;/dialogactions&gt;
+      &lt;/form&gt;
+    &lt;/dialog&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/queries/label-text.js:111:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByLabelText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductForm.test.tsx:121:29)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="ProductForm Component renders in create mode" name="ProductForm Component renders in create mode" time="0.017">
+    </testcase>
+    <testcase classname="ProductForm Component renders in edit mode" name="ProductForm Component renders in edit mode" time="0.004">
+    </testcase>
+    <testcase classname="ProductForm Component handles form input changes" name="ProductForm Component handles form input changes" time="0.004">
+      <failure>TestingLibraryElementError: Unable to find a label with the text of: Product Name
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;dialog
+      maxwidth=&quot;sm&quot;
+      open=&quot;&quot;
+    &gt;
+      &lt;dialogtitle&gt;
+        Add New Product
+      &lt;/dialogtitle&gt;
+      &lt;form&gt;
+        &lt;dialogcontent&gt;
+          &lt;textfield
+            label=&quot;Product Name&quot;
+            margin=&quot;dense&quot;
+            name=&quot;name&quot;
+            required=&quot;&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Price&quot;
+            margin=&quot;dense&quot;
+            name=&quot;price&quot;
+            required=&quot;&quot;
+            type=&quot;number&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Description&quot;
+            margin=&quot;dense&quot;
+            name=&quot;description&quot;
+            rows=&quot;4&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Status&quot;
+            margin=&quot;dense&quot;
+            name=&quot;status&quot;
+            type=&quot;text&quot;
+            value=&quot;active&quot;
+          /&gt;
+        &lt;/dialogcontent&gt;
+        &lt;dialogactions&gt;
+          &lt;button&gt;
+            Cancel
+          &lt;/button&gt;
+          &lt;button
+            color=&quot;primary&quot;
+            type=&quot;submit&quot;
+            variant=&quot;contained&quot;
+          &gt;
+            Create
+          &lt;/button&gt;
+        &lt;/dialogactions&gt;
+      &lt;/form&gt;
+    &lt;/dialog&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/queries/label-text.js:111:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByLabelText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductForm.test.tsx:164:29)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="ProductForm Component submits form data correctly" name="ProductForm Component submits form data correctly" time="0.007">
+      <failure>TestingLibraryElementError: Unable to find a label with the text of: Product Name
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;dialog
+      maxwidth=&quot;sm&quot;
+      open=&quot;&quot;
+    &gt;
+      &lt;dialogtitle&gt;
+        Add New Product
+      &lt;/dialogtitle&gt;
+      &lt;form&gt;
+        &lt;dialogcontent&gt;
+          &lt;textfield
+            label=&quot;Product Name&quot;
+            margin=&quot;dense&quot;
+            name=&quot;name&quot;
+            required=&quot;&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Price&quot;
+            margin=&quot;dense&quot;
+            name=&quot;price&quot;
+            required=&quot;&quot;
+            type=&quot;number&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Description&quot;
+            margin=&quot;dense&quot;
+            name=&quot;description&quot;
+            rows=&quot;4&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Status&quot;
+            margin=&quot;dense&quot;
+            name=&quot;status&quot;
+            type=&quot;text&quot;
+            value=&quot;active&quot;
+          /&gt;
+        &lt;/dialogcontent&gt;
+        &lt;dialogactions&gt;
+          &lt;button&gt;
+            Cancel
+          &lt;/button&gt;
+          &lt;button
+            color=&quot;primary&quot;
+            type=&quot;submit&quot;
+            variant=&quot;contained&quot;
+          &gt;
+            Create
+          &lt;/button&gt;
+        &lt;/dialogactions&gt;
+      &lt;/form&gt;
+    &lt;/dialog&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/queries/label-text.js:111:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByLabelText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductForm.test.tsx:192:29)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="ProductForm Component closes dialog when cancel is clicked" name="ProductForm Component closes dialog when cancel is clicked" time="0.006">
+    </testcase>
+    <testcase classname="ProductForm Component pre-fills form in edit mode" name="ProductForm Component pre-fills form in edit mode" time="0.003">
+      <failure>TestingLibraryElementError: Unable to find a label with the text of: Product Name
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;dialog
+      maxwidth=&quot;sm&quot;
+      open=&quot;&quot;
+    &gt;
+      &lt;dialogtitle&gt;
+        Edit Product
+      &lt;/dialogtitle&gt;
+      &lt;form&gt;
+        &lt;dialogcontent&gt;
+          &lt;textfield
+            label=&quot;Product Name&quot;
+            margin=&quot;dense&quot;
+            name=&quot;name&quot;
+            required=&quot;&quot;
+            type=&quot;text&quot;
+            value=&quot;Test Product&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Price&quot;
+            margin=&quot;dense&quot;
+            name=&quot;price&quot;
+            required=&quot;&quot;
+            type=&quot;number&quot;
+            value=&quot;100&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Description&quot;
+            margin=&quot;dense&quot;
+            name=&quot;description&quot;
+            rows=&quot;4&quot;
+            type=&quot;text&quot;
+            value=&quot;Test description&quot;
+          /&gt;
+          &lt;textfield
+            label=&quot;Status&quot;
+            margin=&quot;dense&quot;
+            name=&quot;status&quot;
+            type=&quot;text&quot;
+            value=&quot;active&quot;
+          /&gt;
+        &lt;/dialogcontent&gt;
+        &lt;dialogactions&gt;
+          &lt;button&gt;
+            Cancel
+          &lt;/button&gt;
+          &lt;button
+            color=&quot;primary&quot;
+            type=&quot;submit&quot;
+            variant=&quot;contained&quot;
+          &gt;
+            Update
+          &lt;/button&gt;
+        &lt;/dialogactions&gt;
+      &lt;/form&gt;
+    &lt;/dialog&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/queries/label-text.js:111:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByLabelText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductForm.test.tsx:241:19)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="ProductList Component" errors="0" failures="9" skipped="0" timestamp="2025-07-09T15:07:04" time="5.982" tests="18">
+    <testcase classname="ProductList Component renders correctly" name="ProductList Component renders correctly" time="0.118">
+    </testcase>
+    <testcase classname="ProductList Component displays fetched products" name="ProductList Component displays fetched products" time="0.014">
+    </testcase>
+    <testcase classname="ProductList Component opens Add Product dialog" name="ProductList Component opens Add Product dialog" time="1.049">
+      <failure>Error: Found multiple elements with the text: /Add Product/i
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+&lt;button
+  class=&quot;bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600&quot;
+&gt;
+  Add Product
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;h2
+  class=&quot;MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-rvoa5x-MuiTypography-root-MuiDialogTitle-root&quot;
+  id=&quot;:r2:&quot;
+&gt;
+  Add Product
+&lt;/h2&gt;
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+&lt;body
+  style=&quot;padding-right: 1024px; overflow: hidden;&quot;
+&gt;
+  &lt;div
+    aria-hidden=&quot;true&quot;
+  &gt;
+    &lt;div
+      class=&quot;container mx-auto p-4&quot;
+    &gt;
+      &lt;div
+        class=&quot;flex justify-between items-center mb-6&quot;
+      &gt;
+        &lt;h1
+          class=&quot;text-2xl font-bold text-white&quot;
+        &gt;
+          Product List
+        &lt;/h1&gt;
+        &lt;button
+          class=&quot;bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600&quot;
+        &gt;
+          Add Product
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;mb-6&quot;
+      &gt;
+        &lt;input
+          class=&quot;w-full p-2 border rounded&quot;
+          placeholder=&quot;Search products...&quot;
+          type=&quot;text&quot;
+          value=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6&quot;
+      &gt;
+        &lt;div
+          class=&quot;bg-white rounded-lg shadow-md p-4&quot;
+        &gt;
+          &lt;h3
+            class=&quot;text-lg font-semibold mb-2&quot;
+          &gt;
+            Test Product
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-2&quot;
+          &gt;
+            Price: $
+            100
+          &lt;/p&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-2&quot;
+          &gt;
+            Quantity: 
+            10
+          &lt;/p&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-4&quot;
+          &gt;
+            Desc
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;flex justify-end space-x-2&quot;
+          &gt;
+            &lt;button
+              class=&quot;bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600&quot;
+            &gt;
+              Edit
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600&quot;
+            &gt;
+              Delete
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;flex justify-center mt-6&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex items-center gap-4&quot;
+        &gt;
+          &lt;nav
+            aria-label=&quot;pagination navigation&quot;
+            class=&quot;MuiPagination-root MuiPagination-outlined css-zkg5vc-MuiPagination-root&quot;
+          &gt;
+            &lt;ul
+              class=&quot;MuiPagination-ul css-1c5o7vy-MuiPagination-ul&quot;
+            &gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to first page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;FirstPageIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to previous page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;NavigateBeforeIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-current=&quot;page&quot;
+                  aria-label=&quot;page 1&quot;
+                  class=&quot;MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-selected MuiPaginationItem-page css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  tabindex=&quot;0&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  1
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to next page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-r...
+    at waitForWrapper (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/wait-for.js:163:27)
+    at /Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:86:32
+    at Object.findByText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductList.test.tsx:76:25)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="ProductList Component adds a product" name="ProductList Component adds a product" time="1.041">
+      <failure>Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+Expected: &quot;/products&quot;, {&quot;description&quot;: &quot;Nice product&quot;, &quot;name&quot;: &quot;New Product&quot;, &quot;price&quot;: 50, &quot;quantity&quot;: 5}
+
+Number of calls: 0
+
+Ignored nodes: comments, script, style
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta
+      content=&quot;&quot;
+      name=&quot;emotion-insertion-point&quot;
+    /&gt;
+  &lt;/head&gt;
+  &lt;body
+    style=&quot;padding-right: 1024px; overflow: hidden;&quot;
+  &gt;
+    &lt;div
+      aria-hidden=&quot;true&quot;
+    &gt;
+      &lt;div
+        class=&quot;container mx-auto p-4&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex justify-between items-center mb-6&quot;
+        &gt;
+          &lt;h1
+            class=&quot;text-2xl font-bold text-white&quot;
+          &gt;
+            Product List
+          &lt;/h1&gt;
+          &lt;button
+            class=&quot;bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600&quot;
+          &gt;
+            Add Product
+          &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;mb-6&quot;
+        &gt;
+          &lt;input
+            class=&quot;w-full p-2 border rounded&quot;
+            placeholder=&quot;Search products...&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4&quot;
+        &gt;
+          Please enter a valid name and price
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6&quot;
+        &gt;
+          &lt;div
+            class=&quot;bg-white rounded-lg shadow-md p-4&quot;
+          &gt;
+            &lt;h3
+              class=&quot;text-lg font-semibold mb-2&quot;
+            &gt;
+              Test Product
+            &lt;/h3&gt;
+            &lt;p
+              class=&quot;text-gray-600 mb-2&quot;
+            &gt;
+              Price: $
+              100
+            &lt;/p&gt;
+            &lt;p
+              class=&quot;text-gray-600 mb-2&quot;
+            &gt;
+              Quantity: 
+              10
+            &lt;/p&gt;
+            &lt;p
+              class=&quot;text-gray-600 mb-4&quot;
+            &gt;
+              Desc
+            &lt;/p&gt;
+            &lt;div
+              class=&quot;flex justify-end space-x-2&quot;
+            &gt;
+              &lt;button
+                class=&quot;bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600&quot;
+              &gt;
+                Edit
+              &lt;/button&gt;
+              &lt;button
+                class=&quot;bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600&quot;
+              &gt;
+                Delete
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;flex justify-center mt-6&quot;
+        &gt;
+          &lt;div
+            class=&quot;flex items-center gap-4&quot;
+          &gt;
+            &lt;nav
+              aria-label=&quot;pagination navigation&quot;
+              class=&quot;MuiPagination-root MuiPagination-outlined css-zkg5vc-MuiPagination-root&quot;
+            &gt;
+              &lt;ul
+                class=&quot;MuiPagination-ul css-1c5o7vy-MuiPagination-ul&quot;
+              &gt;
+                &lt;li&gt;
+                  &lt;button
+                    aria-label=&quot;Go to first page&quot;
+                    class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                    disabled=&quot;&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  &gt;
+                    &lt;svg
+                      aria-hidden=&quot;true&quot;
+                      class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                      data-testid=&quot;FirstPageIcon&quot;
+                      focusable=&quot;false&quot;
+                      viewBox=&quot;0 0 24 24&quot;
+                    &gt;
+                      &lt;path
+                        d=&quot;M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z&quot;
+                      /&gt;
+                    &lt;/svg&gt;
+                  &lt;/button&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;button
+                    aria-label=&quot;Go to previous page&quot;
+                    class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                    disabled=&quot;&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  &gt;
+                    &lt;svg
+                      aria-hidden=&quot;true&quot;
+                      class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                      data-testid=&quot;NavigateBeforeIcon&quot;
+                      focusable=&quot;false&quot;
+                      viewBox=&quot;0 0 24 24&quot;
+                    &gt;
+                      &lt;path
+                        d=&quot;M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z&quot;
+                      /&gt;
+                    &lt;/svg&gt;
+                  &lt;/button&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;button
+                    aria-current=&quot;page&quot;
+                    aria-label=&quot;page 1&quot;
+                    class=&quot;MuiButtonBase-root MuiPaginationItem-root...
+    at toHaveBeenCalledWith (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductList.test.tsx:91:26)
+    at callback (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:47:12)
+    at checkCallback (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/wait-for.js:124:76)
+    at checkCallback (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/wait-for.js:118:16)
+    at Timeout.task [as _onTimeout] (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jsdom/lib/jsdom/browser/Window.js:520:19)
+    at listOnTimeout (node:internal/timers:608:17)
+    at processTimers (node:internal/timers:543:7)</failure>
+    </testcase>
+    <testcase classname="ProductList Component opens and edits product" name="ProductList Component opens and edits product" time="0.034">
+    </testcase>
+    <testcase classname="ProductList Component deletes a product with confirmation" name="ProductList Component deletes a product with confirmation" time="0.013">
+    </testcase>
+    <testcase classname="ProductList Component filters products with search" name="ProductList Component filters products with search" time="0.018">
+    </testcase>
+    <testcase classname="ProductList Component handles invalid price during add" name="ProductList Component handles invalid price during add" time="0.032">
+    </testcase>
+    <testcase classname="ProductList Component handles pagination" name="ProductList Component handles pagination" time="1.03">
+      <failure>Error: expect(jest.fn()).toHaveBeenCalledTimes(expected)
+
+Expected number of calls: 2
+Received number of calls: 1
+
+Ignored nodes: comments, script, style
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta
+      content=&quot;&quot;
+      name=&quot;emotion-insertion-point&quot;
+    /&gt;
+  &lt;/head&gt;
+  &lt;body
+    style=&quot;&quot;
+  &gt;
+    &lt;div&gt;
+      &lt;div
+        class=&quot;container mx-auto p-4&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex justify-between items-center mb-6&quot;
+        &gt;
+          &lt;h1
+            class=&quot;text-2xl font-bold text-white&quot;
+          &gt;
+            Product List
+          &lt;/h1&gt;
+          &lt;button
+            class=&quot;bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600&quot;
+          &gt;
+            Add Product
+          &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;mb-6&quot;
+        &gt;
+          &lt;input
+            class=&quot;w-full p-2 border rounded&quot;
+            placeholder=&quot;Search products...&quot;
+            type=&quot;text&quot;
+            value=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6&quot;
+        &gt;
+          &lt;div
+            class=&quot;bg-white rounded-lg shadow-md p-4&quot;
+          &gt;
+            &lt;h3
+              class=&quot;text-lg font-semibold mb-2&quot;
+            &gt;
+              Test Product
+            &lt;/h3&gt;
+            &lt;p
+              class=&quot;text-gray-600 mb-2&quot;
+            &gt;
+              Price: $
+              100
+            &lt;/p&gt;
+            &lt;p
+              class=&quot;text-gray-600 mb-2&quot;
+            &gt;
+              Quantity: 
+              10
+            &lt;/p&gt;
+            &lt;p
+              class=&quot;text-gray-600 mb-4&quot;
+            &gt;
+              Desc
+            &lt;/p&gt;
+            &lt;div
+              class=&quot;flex justify-end space-x-2&quot;
+            &gt;
+              &lt;button
+                class=&quot;bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600&quot;
+              &gt;
+                Edit
+              &lt;/button&gt;
+              &lt;button
+                class=&quot;bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600&quot;
+              &gt;
+                Delete
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;flex justify-center mt-6&quot;
+        &gt;
+          &lt;div
+            class=&quot;flex items-center gap-4&quot;
+          &gt;
+            &lt;nav
+              aria-label=&quot;pagination navigation&quot;
+              class=&quot;MuiPagination-root MuiPagination-outlined css-zkg5vc-MuiPagination-root&quot;
+            &gt;
+              &lt;ul
+                class=&quot;MuiPagination-ul css-1c5o7vy-MuiPagination-ul&quot;
+              &gt;
+                &lt;li&gt;
+                  &lt;button
+                    aria-label=&quot;Go to first page&quot;
+                    class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                    disabled=&quot;&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  &gt;
+                    &lt;svg
+                      aria-hidden=&quot;true&quot;
+                      class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                      data-testid=&quot;FirstPageIcon&quot;
+                      focusable=&quot;false&quot;
+                      viewBox=&quot;0 0 24 24&quot;
+                    &gt;
+                      &lt;path
+                        d=&quot;M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z&quot;
+                      /&gt;
+                    &lt;/svg&gt;
+                  &lt;/button&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;button
+                    aria-label=&quot;Go to previous page&quot;
+                    class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                    disabled=&quot;&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  &gt;
+                    &lt;svg
+                      aria-hidden=&quot;true&quot;
+                      class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                      data-testid=&quot;NavigateBeforeIcon&quot;
+                      focusable=&quot;false&quot;
+                      viewBox=&quot;0 0 24 24&quot;
+                    &gt;
+                      &lt;path
+                        d=&quot;M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z&quot;
+                      /&gt;
+                    &lt;/svg&gt;
+                  &lt;/button&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;button
+                    aria-current=&quot;page&quot;
+                    aria-label=&quot;page 1&quot;
+                    class=&quot;MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-selected MuiPaginationItem-page css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                    tabindex=&quot;0&quot;
+                    type=&quot;button&quot;
+                  &gt;
+                    1
+                  &lt;/button&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;button
+                    aria-label=&quot;Go to next page&quot;
+                    class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                    disabled=&quot;&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  &gt;
+                    &lt;svg
+                      aria-hidden=&quot;true&quot;
+                      class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                      data-testid=&quot;NavigateNextIcon&quot;
+                      focusable=&quot;false&quot;
+                      viewBox=&quot;0 0 24 24&quot;
+                    &gt;
+                      &lt;path
+                        d=&quot;M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z&quot;
+                      /&gt;
+                    &lt;/svg&gt;
+                  &lt;/button&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;button
+                    aria-label=&quot;Go to last page&quot;
+                    class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                    disabled=&quot;&quot;
+                    tabindex=&quot;-1&quot;
+                    type=&quot;button&quot;
+                  &gt;
+                    &lt;svg
+                      aria-hidden=&quot;true&quot;
+                      class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                      data-testid=&quot;LastPageIcon&quot;
+                      focusable=&quot;false&quot;
+                      viewBox=&quot;0 0 24 24&quot;
+                    &gt;
+                      &lt;path
+                        d=&quot;M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z&quot;
+                      /&gt;
+                    &lt;/svg&gt;
+                  &lt;/button&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/nav&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    at toHaveBeenCalledTimes (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductList.test.tsx:141:42)
+    at callback (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:47:12)
+    at checkCallback (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/wait-for.js:124:76)
+    at checkCallback (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/wait-for.js:118:16)
+    at Timeout.task [as _onTimeout] (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jsdom/lib/jsdom/browser/Window.js:520:19)
+    at listOnTimeout (node:internal/timers:608:17)
+    at processTimers (node:internal/timers:543:7)</failure>
+    </testcase>
+    <testcase classname="ProductList Component displays error if fetching fails" name="ProductList Component displays error if fetching fails" time="0.022">
+    </testcase>
+    <testcase classname="ProductList Component renders without error" name="ProductList Component renders without error" time="0.011">
+      <failure>TestingLibraryElementError: Unable to find an element with the text: Products. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+&lt;body
+  style=&quot;&quot;
+&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;container mx-auto p-4&quot;
+    &gt;
+      &lt;div
+        class=&quot;flex justify-between items-center mb-6&quot;
+      &gt;
+        &lt;h1
+          class=&quot;text-2xl font-bold text-white&quot;
+        &gt;
+          Product List
+        &lt;/h1&gt;
+        &lt;button
+          class=&quot;bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600&quot;
+        &gt;
+          Add Product
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;mb-6&quot;
+      &gt;
+        &lt;input
+          class=&quot;w-full p-2 border rounded&quot;
+          placeholder=&quot;Search products...&quot;
+          type=&quot;text&quot;
+          value=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6&quot;
+      /&gt;
+      &lt;div
+        class=&quot;flex justify-center mt-6&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex items-center gap-4&quot;
+        &gt;
+          &lt;nav
+            aria-label=&quot;pagination navigation&quot;
+            class=&quot;MuiPagination-root MuiPagination-outlined css-zkg5vc-MuiPagination-root&quot;
+          &gt;
+            &lt;ul
+              class=&quot;MuiPagination-ul css-1c5o7vy-MuiPagination-ul&quot;
+            &gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to first page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;FirstPageIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to previous page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;NavigateBeforeIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-current=&quot;page&quot;
+                  aria-label=&quot;page 1&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled Mui-selected MuiPaginationItem-page css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  1
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to next page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;NavigateNextIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to last page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;LastPageIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/nav&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:76:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductList.test.tsx:152:19)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="ProductList Component displays products with pagination" name="ProductList Component displays products with pagination" time="0.016">
+      <failure>TestingLibraryElementError: Unable to find an element with the text: Next. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+&lt;body
+  style=&quot;&quot;
+&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;container mx-auto p-4&quot;
+    &gt;
+      &lt;div
+        class=&quot;flex justify-between items-center mb-6&quot;
+      &gt;
+        &lt;h1
+          class=&quot;text-2xl font-bold text-white&quot;
+        &gt;
+          Product List
+        &lt;/h1&gt;
+        &lt;button
+          class=&quot;bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600&quot;
+        &gt;
+          Add Product
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;mb-6&quot;
+      &gt;
+        &lt;input
+          class=&quot;w-full p-2 border rounded&quot;
+          placeholder=&quot;Search products...&quot;
+          type=&quot;text&quot;
+          value=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6&quot;
+      &gt;
+        &lt;div
+          class=&quot;bg-white rounded-lg shadow-md p-4&quot;
+        &gt;
+          &lt;h3
+            class=&quot;text-lg font-semibold mb-2&quot;
+          &gt;
+            Product 1
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-2&quot;
+          &gt;
+            Price: $
+            100
+          &lt;/p&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-2&quot;
+          &gt;
+            Quantity: 
+            10
+          &lt;/p&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-4&quot;
+          &gt;
+            Test description
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;flex justify-end space-x-2&quot;
+          &gt;
+            &lt;button
+              class=&quot;bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600&quot;
+            &gt;
+              Edit
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600&quot;
+            &gt;
+              Delete
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;bg-white rounded-lg shadow-md p-4&quot;
+        &gt;
+          &lt;h3
+            class=&quot;text-lg font-semibold mb-2&quot;
+          &gt;
+            Product 2
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-2&quot;
+          &gt;
+            Price: $
+            100
+          &lt;/p&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-2&quot;
+          &gt;
+            Quantity: 
+            10
+          &lt;/p&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-4&quot;
+          &gt;
+            Test description
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;flex justify-end space-x-2&quot;
+          &gt;
+            &lt;button
+              class=&quot;bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600&quot;
+            &gt;
+              Edit
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600&quot;
+            &gt;
+              Delete
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;bg-white rounded-lg shadow-md p-4&quot;
+        &gt;
+          &lt;h3
+            class=&quot;text-lg font-semibold mb-2&quot;
+          &gt;
+            Product 3
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-2&quot;
+          &gt;
+            Price: $
+            100
+          &lt;/p&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-2&quot;
+          &gt;
+            Quantity: 
+            10
+          &lt;/p&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-4&quot;
+          &gt;
+            Test description
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;flex justify-end space-x-2&quot;
+          &gt;
+            &lt;button
+              class=&quot;bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600&quot;
+            &gt;
+              Edit
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600&quot;
+            &gt;
+              Delete
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;flex justify-center mt-6&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex items-center gap-4&quot;
+        &gt;
+          &lt;nav
+            aria-label=&quot;pagination navigation&quot;
+            class=&quot;MuiPagination-root MuiPagination-outlined css-zkg5vc-MuiPagination-root&quot;
+          &gt;
+            &lt;ul
+              class=&quot;MuiPagination-ul css-1c5o7vy-MuiPagination-ul&quot;
+            &gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to first page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;FirstPageIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to previous page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;NavigateBeforeIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-current=&quot;page&quot;
+                  aria-label=&quot;page 1&quot;
+                  class=&quot;MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-selected MuiPaginationItem-page css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  tabindex=&quot;0&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  1
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to page 2&quot;
+                  class=&quot;MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary MuiPaginationItem-page css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  tabindex=&quot;0&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  2
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to next page&quot;
+                  class=&quot;MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  tabindex=&quot;0&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;NavigateNextIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to last page&quot;
+                  class=&quot;MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  tabindex=&quot;0&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;LastPageIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/nav&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:76:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductList.test.tsx:183:28)</failure>
+    </testcase>
+    <testcase classname="ProductList Component handles search functionality" name="ProductList Component handles search functionality" time="0.01">
+    </testcase>
+    <testcase classname="ProductList Component handles product deletion" name="ProductList Component handles product deletion" time="0.008">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;delete-button-1&quot;]
+
+Ignored nodes: comments, script, style
+&lt;body
+  style=&quot;&quot;
+&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;container mx-auto p-4&quot;
+    &gt;
+      &lt;div
+        class=&quot;flex justify-between items-center mb-6&quot;
+      &gt;
+        &lt;h1
+          class=&quot;text-2xl font-bold text-white&quot;
+        &gt;
+          Product List
+        &lt;/h1&gt;
+        &lt;button
+          class=&quot;bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600&quot;
+        &gt;
+          Add Product
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;mb-6&quot;
+      &gt;
+        &lt;input
+          class=&quot;w-full p-2 border rounded&quot;
+          placeholder=&quot;Search products...&quot;
+          type=&quot;text&quot;
+          value=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6&quot;
+      &gt;
+        &lt;div
+          class=&quot;bg-white rounded-lg shadow-md p-4&quot;
+        &gt;
+          &lt;h3
+            class=&quot;text-lg font-semibold mb-2&quot;
+          &gt;
+            Test Product
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-2&quot;
+          &gt;
+            Price: $
+            100
+          &lt;/p&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-2&quot;
+          &gt;
+            Quantity: 
+            10
+          &lt;/p&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-4&quot;
+          &gt;
+            Test description
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;flex justify-end space-x-2&quot;
+          &gt;
+            &lt;button
+              class=&quot;bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600&quot;
+            &gt;
+              Edit
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600&quot;
+            &gt;
+              Delete
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;flex justify-center mt-6&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex items-center gap-4&quot;
+        &gt;
+          &lt;nav
+            aria-label=&quot;pagination navigation&quot;
+            class=&quot;MuiPagination-root MuiPagination-outlined css-zkg5vc-MuiPagination-root&quot;
+          &gt;
+            &lt;ul
+              class=&quot;MuiPagination-ul css-1c5o7vy-MuiPagination-ul&quot;
+            &gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to first page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;FirstPageIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to previous page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;NavigateBeforeIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-current=&quot;page&quot;
+                  aria-label=&quot;page 1&quot;
+                  class=&quot;MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-selected MuiPaginationItem-page css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  tabindex=&quot;0&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  1
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to next page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;NavigateNextIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to last page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;LastPageIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/nav&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:76:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByTestId (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductList.test.tsx:232:28)</failure>
+    </testcase>
+    <testcase classname="ProductList Component handles product edit" name="ProductList Component handles product edit" time="0.007">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;edit-button-1&quot;]
+
+Ignored nodes: comments, script, style
+&lt;body
+  style=&quot;&quot;
+&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;container mx-auto p-4&quot;
+    &gt;
+      &lt;div
+        class=&quot;flex justify-between items-center mb-6&quot;
+      &gt;
+        &lt;h1
+          class=&quot;text-2xl font-bold text-white&quot;
+        &gt;
+          Product List
+        &lt;/h1&gt;
+        &lt;button
+          class=&quot;bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600&quot;
+        &gt;
+          Add Product
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;mb-6&quot;
+      &gt;
+        &lt;input
+          class=&quot;w-full p-2 border rounded&quot;
+          placeholder=&quot;Search products...&quot;
+          type=&quot;text&quot;
+          value=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6&quot;
+      &gt;
+        &lt;div
+          class=&quot;bg-white rounded-lg shadow-md p-4&quot;
+        &gt;
+          &lt;h3
+            class=&quot;text-lg font-semibold mb-2&quot;
+          &gt;
+            Test Product
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-2&quot;
+          &gt;
+            Price: $
+            100
+          &lt;/p&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-2&quot;
+          &gt;
+            Quantity: 
+            10
+          &lt;/p&gt;
+          &lt;p
+            class=&quot;text-gray-600 mb-4&quot;
+          &gt;
+            Test description
+          &lt;/p&gt;
+          &lt;div
+            class=&quot;flex justify-end space-x-2&quot;
+          &gt;
+            &lt;button
+              class=&quot;bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600&quot;
+            &gt;
+              Edit
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600&quot;
+            &gt;
+              Delete
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;flex justify-center mt-6&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex items-center gap-4&quot;
+        &gt;
+          &lt;nav
+            aria-label=&quot;pagination navigation&quot;
+            class=&quot;MuiPagination-root MuiPagination-outlined css-zkg5vc-MuiPagination-root&quot;
+          &gt;
+            &lt;ul
+              class=&quot;MuiPagination-ul css-1c5o7vy-MuiPagination-ul&quot;
+            &gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to first page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;FirstPageIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to previous page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;NavigateBeforeIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-current=&quot;page&quot;
+                  aria-label=&quot;page 1&quot;
+                  class=&quot;MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-selected MuiPaginationItem-page css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  tabindex=&quot;0&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  1
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to next page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;NavigateNextIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to last page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;LastPageIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/nav&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:76:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByTestId (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductList.test.tsx:254:28)</failure>
+    </testcase>
+    <testcase classname="ProductList Component handles add product" name="ProductList Component handles add product" time="0.009">
+      <failure>TestingLibraryElementError: Unable to find an element with the text: Add New Product. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+&lt;body
+  style=&quot;padding-right: 1024px; overflow: hidden;&quot;
+&gt;
+  &lt;div
+    aria-hidden=&quot;true&quot;
+  &gt;
+    &lt;div
+      class=&quot;container mx-auto p-4&quot;
+    &gt;
+      &lt;div
+        class=&quot;flex justify-between items-center mb-6&quot;
+      &gt;
+        &lt;h1
+          class=&quot;text-2xl font-bold text-white&quot;
+        &gt;
+          Product List
+        &lt;/h1&gt;
+        &lt;button
+          class=&quot;bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600&quot;
+        &gt;
+          Add Product
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;mb-6&quot;
+      &gt;
+        &lt;input
+          class=&quot;w-full p-2 border rounded&quot;
+          placeholder=&quot;Search products...&quot;
+          type=&quot;text&quot;
+          value=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6&quot;
+      /&gt;
+      &lt;div
+        class=&quot;flex justify-center mt-6&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex items-center gap-4&quot;
+        &gt;
+          &lt;nav
+            aria-label=&quot;pagination navigation&quot;
+            class=&quot;MuiPagination-root MuiPagination-outlined css-zkg5vc-MuiPagination-root&quot;
+          &gt;
+            &lt;ul
+              class=&quot;MuiPagination-ul css-1c5o7vy-MuiPagination-ul&quot;
+            &gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to first page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;FirstPageIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to previous page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;NavigateBeforeIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-current=&quot;page&quot;
+                  aria-label=&quot;page 1&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled Mui-selected MuiPaginationItem-page css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  1
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to next page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;NavigateNextIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to last page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;LastPageIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/nav&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div
+    class=&quot;MuiDialog-root MuiModal-root css-1424xw8-MuiModal-root-MuiDialog-root&quot;
+    role=&quot;presentation&quot;
+  &gt;
+    &lt;div
+      aria-hidden=&quot;true&quot;
+      class=&quot;MuiBackdrop-root MuiModal-backdrop css-1cennmq-MuiBackdrop-root-MuiDialog-backdrop&quot;
+      style=&quot;opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;
+    /&gt;
+    &lt;div
+      data-testid=&quot;sentinelStart&quot;
+      tabindex=&quot;0&quot;
+    /&gt;
+    &lt;div
+      class=&quot;MuiDialog-container MuiDialog-scrollPaper css-19do60a-MuiDialog-container&quot;
+      role=&quot;presentation&quot;
+      style=&quot;opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;
+      tabindex=&quot;-1&quot;
+    &gt;
+      &lt;div
+        aria-labelledby=&quot;:rj:&quot;
+        aria-modal=&quot;true&quot;
+        class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm css-10d30g3-MuiPaper-root-MuiDialog-paper&quot;
+        role=&quot;dialog&quot;
+        style=&quot;--Paper-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);&quot;
+      &gt;
+        &lt;h2
+          class=&quot;MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-rvoa5x-MuiTypography-root-MuiDialogTitle-root&quot;
+          id=&quot;:rj:&quot;
+        &gt;
+          Add Product
+        &lt;/h2&gt;
+        &lt;div
+          class=&quot;MuiDialogContent-root css-kw13he-MuiDialogContent-root&quot;
+        &gt;
+          &lt;form
+            class=&quot;space-y-4&quot;
+          &gt;
+            &lt;div&gt;
+              &lt;label
+                class=&quot;block text-sm font-medium text-gray-700&quot;
+                for=&quot;name&quot;
+              &gt;
+                Name
+              &lt;/label&gt;
+              &lt;input
+                class=&quot;mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500&quot;
+                id=&quot;name&quot;
+                name=&quot;name&quot;
+                required=&quot;&quot;
+                type=&quot;text&quot;
+                value=&quot;&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;label
+                class=&quot;block text-sm font-medium text-gray-700&quot;
+                for=&quot;price&quot;
+              &gt;
+                Price
+              &lt;/label&gt;
+              &lt;input
+                class=&quot;mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500&quot;
+                id=&quot;price&quot;
+                min=&quot;0&quot;
+                name=&quot;price&quot;
+                required=&quot;&quot;
+                step=&quot;0.01&quot;
+                type=&quot;number&quot;
+                value=&quot;0&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;label
+                class=&quot;block text-sm font-medium text-gray-700&quot;
+                for=&quot;description&quot;
+              &gt;
+                Description
+              &lt;/label&gt;
+              &lt;input
+                class=&quot;mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500&quot;
+                id=&quot;description&quot;
+                name=&quot;description&quot;
+                type=&quot;text&quot;
+                value=&quot;&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;label
+                class=&quot;block text-sm font-medium text-gray-700&quot;
+                for=&quot;quantity&quot;
+              &gt;
+                Quantity
+              &lt;/label&gt;
+              &lt;input
+                class=&quot;mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500&quot;
+                id=&quot;quantity&quot;
+                min=&quot;0&quot;
+                name=&quot;quantity&quot;
+                required=&quot;&quot;
+                type=&quot;number&quot;
+                value=&quot;0&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;MuiDialogActions-root MuiDialogActions-spacing css-15fu35s-MuiDialogActions-root&quot;
+        &gt;
+          &lt;button
+            class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-74d805-MuiButtonBase-root-MuiButton-root&quot;
+            tabindex=&quot;0&quot;
+            type=&quot;button&quot;
+          &gt;
+            Add
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div
+      data-testid=&quot;sentinelEnd&quot;
+      tabindex=&quot;0&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:76:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductList.test.tsx:273:19)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="ProductList Component handles error state" name="ProductList Component handles error state" time="0.007">
+    </testcase>
+    <testcase classname="ProductList Component handles form validation" name="ProductList Component handles form validation" time="0.01">
+      <failure>TestingLibraryElementError: Unable to find an element with the text: Please enter a valid name. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+&lt;body
+  style=&quot;padding-right: 1024px; overflow: hidden;&quot;
+&gt;
+  &lt;div
+    aria-hidden=&quot;true&quot;
+  &gt;
+    &lt;div
+      class=&quot;container mx-auto p-4&quot;
+    &gt;
+      &lt;div
+        class=&quot;flex justify-between items-center mb-6&quot;
+      &gt;
+        &lt;h1
+          class=&quot;text-2xl font-bold text-white&quot;
+        &gt;
+          Product List
+        &lt;/h1&gt;
+        &lt;button
+          class=&quot;bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600&quot;
+        &gt;
+          Add Product
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;mb-6&quot;
+      &gt;
+        &lt;input
+          class=&quot;w-full p-2 border rounded&quot;
+          placeholder=&quot;Search products...&quot;
+          type=&quot;text&quot;
+          value=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4&quot;
+      &gt;
+        Please enter a valid name and price
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6&quot;
+      /&gt;
+      &lt;div
+        class=&quot;flex justify-center mt-6&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex items-center gap-4&quot;
+        &gt;
+          &lt;nav
+            aria-label=&quot;pagination navigation&quot;
+            class=&quot;MuiPagination-root MuiPagination-outlined css-zkg5vc-MuiPagination-root&quot;
+          &gt;
+            &lt;ul
+              class=&quot;MuiPagination-ul css-1c5o7vy-MuiPagination-ul&quot;
+            &gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to first page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-firstLast css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;FirstPageIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to previous page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;NavigateBeforeIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-current=&quot;page&quot;
+                  aria-label=&quot;page 1&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled Mui-selected MuiPaginationItem-page css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  1
+                &lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;button
+                  aria-label=&quot;Go to next page&quot;
+                  class=&quot;MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-colorPrimary MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root&quot;
+                  disabled=&quot;&quot;
+                  tabindex=&quot;-1&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;svg
+                    aria-hidden=&quot;true&quot;
+                    class=&quot;MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon&quot;
+                    data-testid=&quot;NavigateNextIcon&quot;
+                    focusable=&quot;false&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z&quot;
+                    /&gt;
+                  &lt;/svg&gt;
+                &lt;...
+    at Object.getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:76:38)
+    at allQuery (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:52:17)
+    at query (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.getByText (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/client/src/components/products/__tests__/ProductList.test.tsx:308:19)
+    at Promise.then.completed (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:74:19)
+    at runTestInternal (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/fairytale/Desktop/interview_projects_2025/LibreChat_test/LibreChat_CRUD/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
