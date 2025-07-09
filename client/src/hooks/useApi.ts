@@ -36,19 +36,67 @@ export const useApi = (): { loading: boolean; error: null } & ApiMethods => {
   const makeRequest = async (method, endpoint, data = null, params = {}) => {
     try {
       setLoading(true);
-      const response = await axios({ method, url: `${API_URL}${endpoint}`, data, params });
-      if (response.data && response.data.items) {
-        const processedData = response.data.items.map((item: Product) => ({
+      // Convert params to query string
+      const queryString = new URLSearchParams(params).toString();
+      const url = queryString ? `${API_URL}${endpoint}?${queryString}` : `${API_URL}${endpoint}`;
+      
+      const response = await axios({
+        method,
+        url,
+        data
+      });
+      
+      console.log('API Response:', {
+        status: response.status,
+        data: response.data
+      });
+      
+      // Process the response data
+      let processedData = response.data;
+      
+      // Helper function to safely convert to string
+      const safeToString = (value: any) => {
+        return value !== undefined && value !== null ? value.toString() : '';
+      };
+      
+      // If the response has items, process them
+      if (processedData && processedData.items) {
+        processedData.items = processedData.items.map((item: Product) => ({
           ...item,
-          price: item.price.toString(),
-          quantity: item.quantity.toString()
+          price: safeToString(item.price),
+          quantity: safeToString(item.quantity)
         }));
-        return { ...response.data, items: processedData };
       }
-      return response.data;
+      
+      // If the response has products, process them
+      if (processedData && processedData.products) {
+        processedData.products = processedData.products.map((item: Product) => ({
+          ...item,
+          price: safeToString(item.price),
+          quantity: safeToString(item.quantity)
+        }));
+      }
+      
+      // If the response is a single item, process it
+      if (processedData && !Array.isArray(processedData)) {
+        processedData = {
+          ...processedData,
+          price: safeToString(processedData.price),
+          quantity: safeToString(processedData.quantity)
+        };
+      }
+      
+      return processedData;
     } catch (err: any) {
-      const error = err.response ? err.response.data : err;
-      setError(null);
+      const error = err.response ? {
+        status: err.response.status,
+        data: err.response.data,
+        message: err.response.data?.message || 'API request failed'
+      } : {
+        message: err.message || 'Unknown error'
+      };
+      console.error('API Error:', error);
+      setError(error);
       throw error;
     } finally {
       setLoading(false);
@@ -66,7 +114,11 @@ export const useApi = (): { loading: boolean; error: null } & ApiMethods => {
       };
       return makeRequest('post', endpoint, processedData);
     }, []),
-    read: useCallback(async (endpoint, id, params = {}) => makeRequest('get', `${endpoint}/${id}`, null, params), []),
+    read: useCallback(async (endpoint, id, params = {}) => {
+      // For list endpoints, don't append ID
+      const fullEndpoint = endpoint.includes('/') ? endpoint : `${endpoint}/${id}`;
+      return makeRequest('get', fullEndpoint, null, params);
+    }, []),
     update: useCallback(async (endpoint, id, data) => {
       const processedData = {
         ...data,
