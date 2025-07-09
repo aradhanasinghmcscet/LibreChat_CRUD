@@ -23,14 +23,16 @@ interface Product {
   name: string;
   price: number;
   description: string;
-  status: 'active' | 'inactive';
+  quantity: number;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
 interface FormValues {
   name: string;
   price: string;
   description: string;
-  status: 'active' | 'inactive';
+  quantity: string;
 }
 
 const ProductList: React.FC = () => {
@@ -57,7 +59,7 @@ const ProductList: React.FC = () => {
     name: '',
     price: '',
     description: '',
-    status: 'active'
+    quantity: '0'
   });
 
   useEffect(() => {
@@ -67,15 +69,15 @@ const ProductList: React.FC = () => {
   const fetchProducts = async () => {
     try {
       const response = await list('/products', {
-        status: 'active',
         page: currentPage,
-        // limit: 10
+        limit: 100
       });
       console.log('🔥 API response from list("/products"):', response);
 
       // Handle paginated response
       const data = response?.items || [];
       const total = response?.count || 0;
+      setTotalPages(Math.ceil(total / 100)); // Update total pages based on new limit
 
       console.log('✅ Parsed product list:', data);
       console.log('Total products:', total);
@@ -157,7 +159,7 @@ const ProductList: React.FC = () => {
     if (window.confirm('Are you sure you want to delete this product?')) {
       try {
         // Use the delete endpoint which performs soft delete
-        await removeProduct('/products', productId);
+        await removeProduct('/api/products', productId);
         setCurrentPage(1); 
         await fetchProducts();
         console.log('Product deleted successfully', productId);
@@ -228,7 +230,7 @@ const ProductList: React.FC = () => {
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold">Product List</h1>
+        <h1 className="text-2xl font-bold text-white">Product List</h1>
         <button
           onClick={handleAddClick}
           className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"

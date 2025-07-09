@@ -6,6 +6,14 @@
     <a href="https://librechat.ai">LibreChat</a>
   </h1>
 </p>
+<p>
+<h1 align="center">
+    <a href="https://librechat.ai/c/products">CRUD App</a>
+  </h1>
+</p>
+<p>
+To Open CRUD app in local post build start the backend and frontend server and navigate to localhost url - http://localhost:3090/c/products
+</p>
 
 <p align="center">
   <a href="https://discord.librechat.ai"> 
