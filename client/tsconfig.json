@@ -17,16 +17,17 @@
     "noEmit": false,
     "declaration": true,
     "declarationDir": "./types",
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "baseUrl": "..",
     "paths": {
       "~/*": ["./client/src/*"],
       "test/*": ["./client/test/*"],
       "*": ["./client/*", "../node_modules/*"],
       "librechat-data-provider/*": ["./packages/data-provider/*"]
-    }
+    },
+    "types": ["node", "jest", "@testing-library/jest-dom", "react"],
+    "strictNullChecks": true
   },
-  "types": ["node", "jest", "@testing-library/jest-dom"],
   "exclude": ["node_modules", "vite.config.ts"],
   "include": [
     "src/**/*",

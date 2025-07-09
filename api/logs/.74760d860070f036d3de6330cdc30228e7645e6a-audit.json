@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/fairytale/Desktop/interview_projects_2025/LibreChat/api/logs/.74760d860070f036d3de6330cdc30228e7645e6a-audit.json",
+    "files": [
+        {
+            "date": 1751787216053,
+            "name": "/Users/fairytale/Desktop/interview_projects_2025/LibreChat/api/logs/meiliSync-2025-07-06.log",
+            "hash": "75b6eed24eb58da31479d3952fa93ff3bda340e051f28e8195357486e72ce0d3"
+        },
+        {
+            "date": 1751886392382,
+            "name": "/Users/fairytale/Desktop/interview_projects_2025/LibreChat/api/logs/meiliSync-2025-07-07.log",
+            "hash": "a4e7077b3610b3220a6b1fe070ced84ffa68c45e9327bc869fd9b06b24f87417"
+        },
+        {
+            "date": 1751979805447,
+            "name": "/Users/fairytale/Desktop/interview_projects_2025/LibreChat/api/logs/meiliSync-2025-07-08.log",
+            "hash": "5bc3654406e3a1231626f131349714e28b1c6361b7f5e2231766d8b9a277e71c"
+        },
+        {
+            "date": 1752001630423,
+            "name": "/Users/fairytale/Desktop/interview_projects_2025/LibreChat/api/logs/meiliSync-2025-07-09.log",
+            "hash": "d0d67977f45c0bddf2227f5468f4cc3c94391ffc57cbd2792546ccc9bd73976f"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/fairytale/Desktop/interview_projects_2025/LibreChat/api/logs/.04dd5265b3e0739c2336f0b3dbb2fc34b44adcbb-audit.json",
+    "files": [
+        {
+            "date": 1751787216055,
+            "name": "/Users/fairytale/Desktop/interview_projects_2025/LibreChat/api/logs/error-2025-07-06.log",
+            "hash": "b2c11b8bb16f3d4722ac9ff879b04d72962d7d71357123d5244c4a4fd9c8e673"
+        },
+        {
+            "date": 1751886392385,
+            "name": "/Users/fairytale/Desktop/interview_projects_2025/LibreChat/api/logs/error-2025-07-07.log",
+            "hash": "5e68e3d6678b6966bd0ea69b384908d077e5e048e0288299b0faee422e8027ca"
+        },
+        {
+            "date": 1751979805450,
+            "name": "/Users/fairytale/Desktop/interview_projects_2025/LibreChat/api/logs/error-2025-07-08.log",
+            "hash": "65d0d267cd2a7e50c984491611576126e0c64ae4f30cdf1848a2fb4823d8b835"
+        },
+        {
+            "date": 1752001630429,
+            "name": "/Users/fairytale/Desktop/interview_projects_2025/LibreChat/api/logs/error-2025-07-09.log",
+            "hash": "ad15c4adbff0fd3d2aba1b5c1d5b142e36650f296fc4106b7325050e7ea15b3c"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,15 +1,15 @@
 import { createBrowserRouter, Navigate, Outlet } from 'react-router-dom';
-import { AuthContextProvider } from '~/hooks/AuthContext';
 import {
   Login,
   VerifyEmail,
   Registration,
   ResetPassword,
+  ApiErrorWatcher,
   TwoFactorScreen,
   RequestPasswordReset,
 } from '~/components/Auth';
 import { OAuthSuccess, OAuthError } from '~/components/OAuth';
-
+import { AuthContextProvider } from '~/hooks/AuthContext';
 import RouteErrorBoundary from './RouteErrorBoundary';
 import StartupLayout from './Layouts/Startup';
 import LoginLayout from './Layouts/Login';
@@ -18,12 +18,15 @@ import ShareRoute from './ShareRoute';
 import ChatRoute from './ChatRoute';
 import Search from './Search';
 import Root from './Root';
-import CrudRoute from './CrudRoute';
-import TodoRoute from './TodoRoute';
+import ProductList from './components/products/ProductList';
+import ProductsRoute from './Products';
 
-const AuthLayout = () => (
-  <AuthContextProvider authConfig={undefined}>
+import { ReactNode } from 'react';
+
+const AuthLayout = (): ReactNode => (
+  <AuthContextProvider>
     <Outlet />
+    <ApiErrorWatcher />
   </AuthContextProvider>
 );
 
@@ -49,7 +52,7 @@ export const router = createBrowserRouter([
   },
   {
     path: '/',
-    element: <AuthLayout />,
+    element: <StartupLayout />,
     errorElement: <RouteErrorBoundary />,
     children: [
       {
@@ -64,6 +67,17 @@ export const router = createBrowserRouter([
         path: 'reset-password',
         element: <ResetPassword />,
       },
+    ],
+  },
+  {
+    path: 'verify',
+    element: <VerifyEmail />,
+    errorElement: <RouteErrorBoundary />,
+  },
+  {
+    element: <AuthLayout />,
+    errorElement: <RouteErrorBoundary />,
+    children: [
       {
         path: '/',
         element: <LoginLayout />,
@@ -80,9 +94,13 @@ export const router = createBrowserRouter([
       },
       dashboardRoutes,
       {
-        path: 'dashboard',
+        path: '/',
         element: <Root />,
         children: [
+          {
+            path: '/c/products',
+            element: <ProductsRoute />,
+          },
           {
             index: true,
             element: <Navigate to="/c/new" replace={true} />,
@@ -99,36 +117,4 @@ export const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: 'todos',
-    element: <TodoRoute />,
-    errorElement: <RouteErrorBoundary />,
-  },
-  {
-    path: 'crud',
-    element: <CrudRoute />,
-    errorElement: <RouteErrorBoundary />,
-    children: [
-      {
-        index: true,
-        element: <Navigate to="list" replace={true} />,
-      },
-      {
-        path: 'list',
-        element: <div>CRUD List View</div>,
-      },
-      {
-        path: 'create',
-        element: <div>CRUD Create Form</div>,
-      },
-      {
-        path: 'edit/:id',
-        element: <div>CRUD Edit Form</div>,
-      },
-      {
-        path: 'view/:id',
-        element: <div>CRUD View Details</div>,
-      },
-    ],
-  }
 ]);
