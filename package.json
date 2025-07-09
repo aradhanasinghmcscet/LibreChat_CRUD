@@ -146,9 +146,6 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.15.0",
-    "@smithy/eventstream-codec": "^4.0.4",
-    "@smithy/signature-v4": "^5.1.2",
-    "mongoose": "^8.16.1",
-    "winston-daily-rotate-file": "^5.0.0"
+    "mongoose": "^8.16.2"
   }
 }

@@ -102,7 +102,7 @@ function NavContent({ links, isCollapsed, resize }: Omit<NavProps, 'defaultActiv
 
 export default function Nav({ links, isCollapsed, resize, defaultActive }: NavProps) {
   return (
-    <ActivePanelProvider defaultActive={defaultActive}>
+    <ActivePanelProvider defaultActive={defaultActive} children={undefined}>
       <NavContent links={links} isCollapsed={isCollapsed} resize={resize} />
     </ActivePanelProvider>
   );

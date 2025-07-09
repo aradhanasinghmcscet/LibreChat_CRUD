@@ -1,0 +1,574 @@
+2025-07-08T18:44:31.565Z info: Listed 5 CRUDServices
+2025-07-08T18:45:07.663Z info: Listed 5 CRUDServices
+2025-07-08T18:45:13.317Z info: Listed 5 CRUDServices
+2025-07-08T18:45:17.622Z info: Listed 5 CRUDServices
+2025-07-08T18:49:16.554Z info: Listed 5 CRUDServices
+2025-07-08T18:49:30.356Z info: Listed 5 CRUDServices
+2025-07-08T18:49:39.355Z info: Listed 5 CRUDServices
+2025-07-08T18:50:23.542Z info: Listed 5 CRUDServices
+2025-07-08T18:52:28.631Z info: Listed 5 CRUDServices
+2025-07-08T19:06:11.934Z debug: [indexSync] Clearing sync timeouts before exiting...
+2025-07-08T19:07:11.715Z info: [Optional] Redis not initialized.
+2025-07-08T19:07:13.246Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-08T19:07:13.366Z info: Connected to MongoDB
+2025-07-08T19:07:13.366Z info: [indexSync] Starting index synchronization check...
+2025-07-08T19:07:13.368Z error: [indexSync] error Right-hand side of 'instanceof' is not an object
+2025-07-08T19:07:13.434Z error: Invalid custom config file at /Users/fairytale/Desktop/interview_projects_2025/LibreChat/librechat.yaml:
+{
+  "issues": [
+    {
+      "code": "invalid_... [truncated]
+2025-07-08T19:07:13.434Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-08T19:07:13.435Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-08T19:07:13.435Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-08T19:07:13.435Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-08T19:07:13.435Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-08T19:07:13.435Z warn: Default value for CREDS_KEY is being used.
+2025-07-08T19:07:13.435Z warn: Default value for CREDS_IV is being used.
+2025-07-08T19:07:13.435Z warn: Default value for JWT_SECRET is being used.
+2025-07-08T19:07:13.435Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2025-07-08T19:07:13.435Z info: Please replace any default secret values.
+2025-07-08T19:07:13.435Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2025-07-08T19:07:13.435Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-08T19:07:13.442Z info: No changes needed for 'USER' role permissions
+2025-07-08T19:07:13.443Z info: No changes needed for 'ADMIN' role permissions
+2025-07-08T19:07:13.443Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-08T19:07:13.455Z info: Server listening at http://localhost:3080
+2025-07-08T19:18:24.142Z info: Listed 5 CRUDServices
+2025-07-08T19:20:30.510Z info: Listed 5 CRUDServices
+2025-07-08T19:20:30.514Z info: Listed 5 CRUDServices
+2025-07-08T19:20:35.305Z info: Listed 5 CRUDServices
+2025-07-08T19:20:35.386Z info: Listed 5 CRUDServices
+2025-07-08T19:21:13.634Z info: Listed 5 CRUDServices
+2025-07-08T19:21:13.641Z info: Listed 5 CRUDServices
+2025-07-08T19:24:09.263Z info: Listed 5 CRUDServices
+2025-07-08T19:25:18.104Z info: Listed 5 CRUDServices
+2025-07-08T19:25:28.992Z info: Listed 5 CRUDServices
+2025-07-08T19:25:49.395Z info: Listed 5 CRUDServices
+2025-07-08T19:26:05.131Z info: Created CRUDService: 686d70cdd43fd6e62ca44699
+2025-07-08T19:26:49.860Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-08T19:27:40.018Z info: Listed 6 CRUDServices
+2025-07-08T19:28:01.576Z info: Listed 6 CRUDServices
+2025-07-08T19:28:06.095Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-08T19:28:19.696Z info: Updated CRUDService: 686d59564255aa9cf1d64c3d
+2025-07-08T19:29:19.148Z info: Listed 6 CRUDServices
+2025-07-08T19:31:45.585Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-08T19:32:16.766Z info: Updated CRUDService: 686d59564255aa9cf1d64c3d
+2025-07-08T19:32:58.494Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-08T19:33:03.227Z info: Updated CRUDService: 686d59564255aa9cf1d64c3d
+2025-07-08T19:33:14.336Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T19:33:58.032Z info: Listed 6 CRUDServices
+2025-07-08T19:34:42.400Z info: Listed 6 CRUDServices
+2025-07-08T19:35:04.760Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T19:35:20.734Z info: Listed 6 CRUDServices
+2025-07-08T19:35:26.318Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T19:35:30.775Z info: Listed 6 CRUDServices
+2025-07-08T19:37:18.114Z info: Listed 6 CRUDServices
+2025-07-08T19:38:09.277Z info: Listed 6 CRUDServices
+2025-07-08T19:38:21.345Z info: Created CRUDService: 686d73add43fd6e62ca44730
+2025-07-08T19:38:43.332Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T19:40:02.019Z info: Listed 7 CRUDServices
+2025-07-08T19:40:50.606Z info: Listed 7 CRUDServices
+2025-07-08T19:41:14.708Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T19:41:53.383Z info: Listed 7 CRUDServices
+2025-07-08T19:42:15.876Z info: Listed 7 CRUDServices
+2025-07-08T19:42:39.212Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T19:42:59.510Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T19:44:28.017Z info: Listed 7 CRUDServices
+2025-07-08T19:44:52.457Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T19:45:02.714Z info: Updated CRUDService: 686d59564255aa9cf1d64c3d
+2025-07-08T19:47:08.082Z info: Listed 7 CRUDServices
+2025-07-08T19:48:00.117Z info: Listed 7 CRUDServices
+2025-07-08T19:48:12.017Z info: Listed 7 CRUDServices
+2025-07-08T19:50:28.420Z info: Listed 7 CRUDServices
+2025-07-08T19:52:31.491Z info: Listed 7 CRUDServices
+2025-07-08T19:53:07.266Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T19:53:47.052Z info: Listed 7 CRUDServices
+2025-07-08T19:54:03.012Z info: Listed 7 CRUDServices
+2025-07-08T19:54:35.639Z info: Listed 7 CRUDServices
+2025-07-08T19:54:56.574Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T19:56:38.183Z info: Listed 7 CRUDServices
+2025-07-08T19:57:01.134Z info: Listed 7 CRUDServices
+2025-07-08T19:57:28.275Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T19:58:23.035Z info: Listed 7 CRUDServices
+2025-07-08T19:58:39.048Z info: Listed 7 CRUDServices
+2025-07-08T19:58:54.905Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T19:59:46.136Z info: Listed 7 CRUDServices
+2025-07-08T20:00:03.858Z info: Listed 7 CRUDServices
+2025-07-08T20:00:28.928Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T20:01:05.840Z info: Listed 7 CRUDServices
+2025-07-08T20:01:26.943Z info: Listed 7 CRUDServices
+2025-07-08T20:01:46.172Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T20:02:53.978Z info: Listed 7 CRUDServices
+2025-07-08T20:03:46.711Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T20:05:06.997Z info: Listed 7 CRUDServices
+2025-07-08T20:05:24.037Z info: Listed 7 CRUDServices
+2025-07-08T20:05:42.665Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-08T20:06:25.000Z info: Listed 7 CRUDServices
+2025-07-08T20:06:32.028Z info: Listed 7 CRUDServices
+2025-07-08T20:06:44.987Z info: Listed 7 CRUDServices
+2025-07-08T20:06:47.957Z info: Listed 7 CRUDServices
+2025-07-08T20:06:53.394Z info: Listed 7 CRUDServices
+2025-07-08T20:11:49.044Z info: Listed 7 CRUDServices
+2025-07-08T20:11:58.946Z info: Listed 7 CRUDServices
+2025-07-08T20:13:06.004Z info: Listed 7 CRUDServices
+2025-07-08T20:13:15.520Z info: Listed 7 CRUDServices
+2025-07-08T20:15:01.977Z info: Listed 7 CRUDServices
+2025-07-09T01:50:37.056Z info: [Optional] Redis not initialized.
+2025-07-09T01:50:38.840Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T01:50:38.932Z info: Connected to MongoDB
+2025-07-09T01:50:38.932Z info: [indexSync] Starting index synchronization check...
+2025-07-09T01:50:38.934Z error: [indexSync] error Right-hand side of 'instanceof' is not an object
+2025-07-09T01:50:39.014Z error: Invalid custom config file at /Users/fairytale/Desktop/interview_projects_2025/LibreChat/librechat.yaml:
+{
+  "issues": [
+    {
+      "code": "invalid_... [truncated]
+2025-07-09T01:50:39.014Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T01:50:39.015Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T01:50:39.015Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T01:50:39.015Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T01:50:39.015Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T01:50:39.015Z warn: Default value for CREDS_KEY is being used.
+2025-07-09T01:50:39.015Z warn: Default value for CREDS_IV is being used.
+2025-07-09T01:50:39.015Z warn: Default value for JWT_SECRET is being used.
+2025-07-09T01:50:39.016Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2025-07-09T01:50:39.016Z info: Please replace any default secret values.
+2025-07-09T01:50:39.016Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2025-07-09T01:50:39.016Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-09T01:50:39.031Z info: No changes needed for 'USER' role permissions
+2025-07-09T01:50:39.032Z info: No changes needed for 'ADMIN' role permissions
+2025-07-09T01:50:39.032Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T01:50:39.047Z info: Server listening at http://localhost:3080
+2025-07-09T01:51:39.473Z debug: [indexSync] Clearing sync timeouts before exiting...
+2025-07-09T01:51:47.845Z info: [Optional] Redis not initialized.
+2025-07-09T01:51:49.711Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T01:51:49.815Z info: Connected to MongoDB
+2025-07-09T01:51:49.816Z info: [indexSync] Starting index synchronization check...
+2025-07-09T01:51:49.817Z error: [indexSync] error Right-hand side of 'instanceof' is not an object
+2025-07-09T01:51:49.880Z error: Invalid custom config file at /Users/fairytale/Desktop/interview_projects_2025/LibreChat/librechat.yaml:
+{
+  "issues": [
+    {
+      "code": "invalid_... [truncated]
+2025-07-09T01:51:49.881Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T01:51:49.881Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T01:51:49.881Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T01:51:49.881Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T01:51:49.881Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T01:51:49.881Z warn: Default value for CREDS_KEY is being used.
+2025-07-09T01:51:49.881Z warn: Default value for CREDS_IV is being used.
+2025-07-09T01:51:49.881Z warn: Default value for JWT_SECRET is being used.
+2025-07-09T01:51:49.881Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2025-07-09T01:51:49.881Z info: Please replace any default secret values.
+2025-07-09T01:51:49.881Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2025-07-09T01:51:49.881Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-09T01:51:49.889Z info: No changes needed for 'USER' role permissions
+2025-07-09T01:51:49.890Z info: No changes needed for 'ADMIN' role permissions
+2025-07-09T01:51:49.890Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T01:51:49.910Z info: Server listening at http://localhost:3080
+2025-07-09T01:53:57.601Z info: [Optional] Redis not initialized.
+2025-07-09T01:53:58.826Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T01:53:59.329Z info: Connected to MongoDB
+2025-07-09T01:53:59.330Z info: [indexSync] Starting index synchronization check...
+2025-07-09T01:53:59.339Z error: [indexSync] error Right-hand side of 'instanceof' is not an object
+2025-07-09T01:54:00.115Z error: Invalid custom config file at /Users/fairytale/Desktop/interview_projects_2025/LibreChat/librechat.yaml:
+{
+  "issues": [
+    {
+      "code": "invalid_... [truncated]
+2025-07-09T01:54:00.115Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T01:54:00.115Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T01:54:00.116Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T01:54:00.116Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T01:54:00.116Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T01:54:00.116Z warn: Default value for CREDS_KEY is being used.
+2025-07-09T01:54:00.116Z warn: Default value for CREDS_IV is being used.
+2025-07-09T01:54:00.116Z warn: Default value for JWT_SECRET is being used.
+2025-07-09T01:54:00.116Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2025-07-09T01:54:00.116Z info: Please replace any default secret values.
+2025-07-09T01:54:00.116Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2025-07-09T01:54:00.117Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-09T01:54:00.147Z info: No changes needed for 'USER' role permissions
+2025-07-09T01:54:00.148Z info: No changes needed for 'ADMIN' role permissions
+2025-07-09T01:54:00.148Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T01:54:00.165Z info: Server listening at http://localhost:3080
+2025-07-09T01:57:14.991Z info: Listed 7 CRUDServices
+2025-07-09T01:58:41.247Z info: Listed 7 CRUDServices
+2025-07-09T02:05:46.596Z info: Listed 7 CRUDServices
+2025-07-09T02:11:49.308Z info: Listed 7 CRUDServices
+2025-07-09T02:17:19.356Z info: Listed 7 CRUDServices
+2025-07-09T02:20:19.644Z info: Listed 7 CRUDServices
+2025-07-09T02:21:33.620Z info: Listed 7 CRUDServices
+2025-07-09T02:21:39.695Z info: Listed 7 CRUDServices
+2025-07-09T02:22:07.459Z info: Listed 7 CRUDServices
+2025-07-09T02:25:30.892Z info: Listed 7 CRUDServices
+2025-07-09T02:27:39.004Z info: [Login] [Login successful] [Username: aradhanasinghmcscet@gmail.com] [Request-IP: ::1]
+2025-07-09T02:27:59.694Z info: Listed 7 CRUDServices
+2025-07-09T02:29:54.147Z info: Listed 7 CRUDServices
+2025-07-09T02:32:58.065Z info: Listed 7 CRUDServices
+2025-07-09T02:33:17.181Z info: Listed 7 CRUDServices
+2025-07-09T02:34:24.746Z info: Listed 7 CRUDServices
+2025-07-09T02:34:34.475Z info: Listed 7 CRUDServices
+2025-07-09T02:38:46.488Z info: Listed 7 CRUDServices
+2025-07-09T02:39:36.012Z info: Created CRUDService: 686dd667176fa33387ee9585
+2025-07-09T02:39:36.047Z info: Listed 8 CRUDServices
+2025-07-09T02:40:05.039Z info: Updated CRUDService: 686d59474255aa9cf1d64c39
+2025-07-09T02:40:05.062Z info: Listed 8 CRUDServices
+2025-07-09T02:40:13.678Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T02:40:13.704Z info: Listed 8 CRUDServices
+2025-07-09T02:40:22.186Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T02:40:22.219Z info: Listed 8 CRUDServices
+2025-07-09T02:40:54.910Z info: Updated CRUDService: 686d70cdd43fd6e62ca44699
+2025-07-09T02:40:54.932Z info: Listed 8 CRUDServices
+2025-07-09T02:45:15.514Z info: Listed 8 CRUDServices
+2025-07-09T02:45:31.347Z info: Listed 8 CRUDServices
+2025-07-09T02:45:36.149Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T02:45:36.173Z info: Listed 8 CRUDServices
+2025-07-09T02:45:42.310Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T02:45:42.326Z info: Listed 8 CRUDServices
+2025-07-09T02:45:49.595Z info: Listed 8 CRUDServices
+2025-07-09T02:46:01.781Z info: Updated CRUDService: 686d59564255aa9cf1d64c3d
+2025-07-09T02:46:01.811Z info: Listed 8 CRUDServices
+2025-07-09T02:46:18.447Z info: Listed 8 CRUDServices
+2025-07-09T02:46:22.357Z info: Listed 8 CRUDServices
+2025-07-09T02:46:25.930Z info: Updated CRUDService: 686d59564255aa9cf1d64c3d
+2025-07-09T02:46:25.956Z info: Listed 8 CRUDServices
+2025-07-09T02:51:49.473Z info: Listed 8 CRUDServices
+2025-07-09T02:51:56.447Z info: Listed 8 CRUDServices
+2025-07-09T02:52:04.439Z info: Listed 8 CRUDServices
+2025-07-09T02:52:17.369Z info: Listed 8 CRUDServices
+2025-07-09T02:52:20.809Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T02:52:20.829Z info: Listed 8 CRUDServices
+2025-07-09T02:52:24.408Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T02:52:24.428Z info: Listed 8 CRUDServices
+2025-07-09T02:53:10.439Z info: Listed 8 CRUDServices
+2025-07-09T02:53:17.446Z info: Listed 8 CRUDServices
+2025-07-09T02:53:32.214Z info: Listed 8 CRUDServices
+2025-07-09T02:53:35.290Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T02:53:35.315Z info: Listed 8 CRUDServices
+2025-07-09T02:53:39.529Z info: Updated CRUDService: 686d59564255aa9cf1d64c3d
+2025-07-09T02:53:39.544Z info: Listed 8 CRUDServices
+2025-07-09T02:53:58.275Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T02:53:58.292Z info: Listed 8 CRUDServices
+2025-07-09T02:54:35.439Z info: Listed 8 CRUDServices
+2025-07-09T02:54:54.829Z info: Listed 8 CRUDServices
+2025-07-09T02:55:00.263Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T02:55:00.276Z info: Listed 8 CRUDServices
+2025-07-09T02:55:36.845Z info: Listed 8 CRUDServices
+2025-07-09T02:55:40.430Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T02:55:40.446Z info: Listed 8 CRUDServices
+2025-07-09T02:56:40.446Z info: Listed 8 CRUDServices
+2025-07-09T02:59:46.654Z info: Listed 8 CRUDServices
+2025-07-09T03:08:05.440Z info: Listed 8 CRUDServices
+2025-07-09T04:39:09.373Z info: [Login] [Login successful] [Username: aradhanasinghmcscet@gmail.com] [Request-IP: ::1]
+2025-07-09T04:39:19.518Z info: Listed 8 CRUDServices
+2025-07-09T04:39:22.937Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T04:39:22.951Z info: Listed 8 CRUDServices
+2025-07-09T04:41:30.776Z info: [Optional] Redis not initialized.
+2025-07-09T04:41:32.601Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T04:41:32.758Z info: Connected to MongoDB
+2025-07-09T04:41:32.758Z info: [indexSync] Starting index synchronization check...
+2025-07-09T04:41:32.760Z error: [indexSync] error Right-hand side of 'instanceof' is not an object
+2025-07-09T04:41:32.810Z error: Invalid custom config file at /Users/fairytale/Desktop/interview_projects_2025/LibreChat/librechat.yaml:
+{
+  "issues": [
+    {
+      "code": "invalid_... [truncated]
+2025-07-09T04:41:32.810Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T04:41:32.810Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T04:41:32.810Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T04:41:32.810Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T04:41:32.810Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T04:41:32.810Z warn: Default value for CREDS_KEY is being used.
+2025-07-09T04:41:32.810Z warn: Default value for CREDS_IV is being used.
+2025-07-09T04:41:32.810Z warn: Default value for JWT_SECRET is being used.
+2025-07-09T04:41:32.811Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2025-07-09T04:41:32.811Z info: Please replace any default secret values.
+2025-07-09T04:41:32.811Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2025-07-09T04:41:32.811Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-09T04:41:32.826Z info: No changes needed for 'USER' role permissions
+2025-07-09T04:41:32.828Z info: No changes needed for 'ADMIN' role permissions
+2025-07-09T04:41:32.829Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T04:41:32.856Z info: Server listening at http://localhost:3080
+2025-07-09T04:47:49.020Z debug: [indexSync] Clearing sync timeouts before exiting...
+2025-07-09T04:49:09.658Z info: [Optional] Redis not initialized.
+2025-07-09T04:49:10.995Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T04:49:11.093Z info: Connected to MongoDB
+2025-07-09T04:49:11.093Z info: [indexSync] Starting index synchronization check...
+2025-07-09T04:49:11.094Z error: [indexSync] error Right-hand side of 'instanceof' is not an object
+2025-07-09T04:49:11.155Z error: Invalid custom config file at /Users/fairytale/Desktop/interview_projects_2025/LibreChat/librechat.yaml:
+{
+  "issues": [
+    {
+      "code": "invalid_... [truncated]
+2025-07-09T04:49:11.156Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T04:49:11.156Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T04:49:11.156Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T04:49:11.156Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T04:49:11.156Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T04:49:11.156Z warn: Default value for CREDS_KEY is being used.
+2025-07-09T04:49:11.156Z warn: Default value for CREDS_IV is being used.
+2025-07-09T04:49:11.156Z warn: Default value for JWT_SECRET is being used.
+2025-07-09T04:49:11.156Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2025-07-09T04:49:11.156Z info: Please replace any default secret values.
+2025-07-09T04:49:11.156Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2025-07-09T04:49:11.156Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-09T04:49:11.163Z info: No changes needed for 'USER' role permissions
+2025-07-09T04:49:11.164Z info: No changes needed for 'ADMIN' role permissions
+2025-07-09T04:49:11.164Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T04:49:11.181Z info: Server listening at http://localhost:3080
+2025-07-09T04:49:35.140Z info: Listed 0 CRUDServices
+2025-07-09T04:50:20.413Z info: [Optional] Redis not initialized.
+2025-07-09T04:50:23.724Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T04:50:24.123Z info: Connected to MongoDB
+2025-07-09T04:50:24.124Z info: [indexSync] Starting index synchronization check...
+2025-07-09T04:50:24.125Z error: [indexSync] error Right-hand side of 'instanceof' is not an object
+2025-07-09T04:50:24.211Z error: Invalid custom config file at /Users/fairytale/Desktop/interview_projects_2025/LibreChat/librechat.yaml:
+{
+  "issues": [
+    {
+      "code": "invalid_... [truncated]
+2025-07-09T04:50:24.212Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T04:50:24.212Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T04:50:24.212Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T04:50:24.212Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T04:50:24.212Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T04:50:24.212Z warn: Default value for CREDS_KEY is being used.
+2025-07-09T04:50:24.212Z warn: Default value for CREDS_IV is being used.
+2025-07-09T04:50:24.212Z warn: Default value for JWT_SECRET is being used.
+2025-07-09T04:50:24.212Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2025-07-09T04:50:24.212Z info: Please replace any default secret values.
+2025-07-09T04:50:24.212Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2025-07-09T04:50:24.212Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-09T04:50:24.222Z info: No changes needed for 'USER' role permissions
+2025-07-09T04:50:24.223Z info: No changes needed for 'ADMIN' role permissions
+2025-07-09T04:50:24.223Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T04:50:24.244Z info: Server listening at http://localhost:3080
+2025-07-09T04:50:57.407Z info: Listed 8 CRUDServices
+2025-07-09T04:51:01.468Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T04:51:01.487Z info: Listed 8 CRUDServices
+2025-07-09T04:52:48.605Z info: Listed 8 CRUDServices
+2025-07-09T04:53:20.449Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T04:53:40.064Z info: Listed 8 CRUDServices
+2025-07-09T04:54:59.208Z info: Listed 8 CRUDServices
+2025-07-09T04:54:59.704Z info: Listed 8 CRUDServices
+2025-07-09T04:55:23.111Z info: Listed 8 CRUDServices
+2025-07-09T04:55:40.876Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T04:55:45.330Z info: Listed 8 CRUDServices
+2025-07-09T04:57:09.768Z info: Listed 8 CRUDServices
+2025-07-09T04:59:40.768Z info: Listed 8 CRUDServices
+2025-07-09T05:00:42.107Z info: Listed 8 CRUDServices
+2025-07-09T05:00:49.778Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:00:49.792Z info: Listed 8 CRUDServices
+2025-07-09T05:01:09.731Z info: Listed 8 CRUDServices
+2025-07-09T05:01:12.722Z info: Listed 8 CRUDServices
+2025-07-09T05:01:17.719Z info: Listed 8 CRUDServices
+2025-07-09T05:01:44.857Z info: Listed 8 CRUDServices
+2025-07-09T05:01:53.398Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:01:53.406Z info: Listed 8 CRUDServices
+2025-07-09T05:02:56.552Z info: Listed 8 CRUDServices
+2025-07-09T05:02:56.711Z info: Listed 8 CRUDServices
+2025-07-09T05:03:05.052Z info: Listed 8 CRUDServices
+2025-07-09T05:03:07.391Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:03:07.413Z info: Listed 8 CRUDServices
+2025-07-09T05:05:04.275Z info: Listed 8 CRUDServices
+2025-07-09T05:05:19.006Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:05:59.455Z info: Listed 8 CRUDServices
+2025-07-09T05:06:32.196Z info: Listed 8 CRUDServices
+2025-07-09T05:06:39.205Z info: Listed 8 CRUDServices
+2025-07-09T05:06:47.110Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:06:48.629Z info: Listed 8 CRUDServices
+2025-07-09T05:07:01.783Z info: Listed 8 CRUDServices
+2025-07-09T05:08:38.524Z info: Listed 8 CRUDServices
+2025-07-09T05:08:56.126Z info: Listed 8 CRUDServices
+2025-07-09T05:09:02.175Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:09:05.194Z info: Listed 8 CRUDServices
+2025-07-09T05:09:12.548Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:09:12.554Z info: Listed 8 CRUDServices
+2025-07-09T05:09:14.069Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:09:14.136Z info: Listed 8 CRUDServices
+2025-07-09T05:09:21.800Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:09:21.835Z info: Listed 8 CRUDServices
+2025-07-09T05:09:25.205Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:09:25.216Z info: Listed 8 CRUDServices
+2025-07-09T05:09:25.488Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:09:25.499Z info: Listed 8 CRUDServices
+2025-07-09T05:09:25.755Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:09:25.767Z info: Listed 8 CRUDServices
+2025-07-09T05:09:25.970Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:09:25.984Z info: Listed 8 CRUDServices
+2025-07-09T05:09:26.170Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:09:26.185Z info: Listed 8 CRUDServices
+2025-07-09T05:10:30.305Z info: Listed 8 CRUDServices
+2025-07-09T05:10:47.931Z info: Listed 8 CRUDServices
+2025-07-09T05:10:48.027Z info: Listed 8 CRUDServices
+2025-07-09T05:11:34.656Z info: Listed 8 CRUDServices
+2025-07-09T05:11:35.613Z info: Listed 8 CRUDServices
+2025-07-09T05:11:42.117Z info: Listed 8 CRUDServices
+2025-07-09T05:11:45.257Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:11:45.274Z info: Listed 8 CRUDServices
+2025-07-09T05:13:05.301Z info: [Optional] Redis not initialized.
+2025-07-09T05:13:08.868Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T05:13:09.635Z info: Connected to MongoDB
+2025-07-09T05:13:09.641Z info: [indexSync] Starting index synchronization check...
+2025-07-09T05:13:09.651Z error: [indexSync] error Right-hand side of 'instanceof' is not an object
+2025-07-09T05:13:11.289Z error: Invalid custom config file at /Users/fairytale/Desktop/interview_projects_2025/LibreChat/librechat.yaml:
+{
+  "issues": [
+    {
+      "code": "invalid_... [truncated]
+2025-07-09T05:13:11.292Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T05:13:11.293Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T05:13:11.293Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T05:13:11.293Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T05:13:11.294Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T05:13:11.294Z warn: Default value for CREDS_KEY is being used.
+2025-07-09T05:13:11.295Z warn: Default value for CREDS_IV is being used.
+2025-07-09T05:13:11.295Z warn: Default value for JWT_SECRET is being used.
+2025-07-09T05:13:11.295Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2025-07-09T05:13:11.295Z info: Please replace any default secret values.
+2025-07-09T05:13:11.295Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2025-07-09T05:13:11.296Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-09T05:13:11.354Z info: No changes needed for 'USER' role permissions
+2025-07-09T05:13:11.357Z info: No changes needed for 'ADMIN' role permissions
+2025-07-09T05:13:11.357Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T05:13:11.421Z info: Server listening at http://localhost:3080
+2025-07-09T05:13:11.853Z info: Listed 0 CRUDServices
+2025-07-09T05:16:19.257Z info: Listed 0 CRUDServices
+2025-07-09T05:16:39.909Z info: Listed 0 CRUDServices
+2025-07-09T05:17:02.056Z info: Listed 0 CRUDServices
+2025-07-09T05:17:11.573Z info: Listed 0 CRUDServices
+2025-07-09T05:17:23.260Z info: [Optional] Redis not initialized.
+2025-07-09T05:17:36.775Z info: [Optional] IoRedis not initialized for rate limiters.
+2025-07-09T05:17:36.985Z info: Connected to MongoDB
+2025-07-09T05:17:36.985Z info: [indexSync] Starting index synchronization check...
+2025-07-09T05:17:36.992Z error: [indexSync] error Right-hand side of 'instanceof' is not an object
+2025-07-09T05:17:37.055Z error: Invalid custom config file at /Users/fairytale/Desktop/interview_projects_2025/LibreChat/librechat.yaml:
+{
+  "issues": [
+    {
+      "code": "invalid_... [truncated]
+2025-07-09T05:17:37.056Z debug: Web search serperApiKey: Using environment variable SERPER_API_KEY (not set in environment, user provided value)
+2025-07-09T05:17:37.056Z debug: Web search firecrawlApiKey: Using environment variable FIRECRAWL_API_KEY (not set in environment, user provided value)
+2025-07-09T05:17:37.056Z debug: Web search firecrawlApiUrl: Using environment variable FIRECRAWL_API_URL (not set in environment, user provided value)
+2025-07-09T05:17:37.056Z debug: Web search jinaApiKey: Using environment variable JINA_API_KEY (not set in environment, user provided value)
+2025-07-09T05:17:37.056Z debug: Web search cohereApiKey: Using environment variable COHERE_API_KEY (not set in environment, user provided value)
+2025-07-09T05:17:37.056Z warn: Default value for CREDS_KEY is being used.
+2025-07-09T05:17:37.056Z warn: Default value for CREDS_IV is being used.
+2025-07-09T05:17:37.056Z warn: Default value for JWT_SECRET is being used.
+2025-07-09T05:17:37.056Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2025-07-09T05:17:37.056Z info: Please replace any default secret values.
+2025-07-09T05:17:37.056Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2025-07-09T05:17:37.056Z warn: RAG API is either not running or not reachable at undefined, you may experience errors with file uploads.
+2025-07-09T05:17:37.068Z info: No changes needed for 'USER' role permissions
+2025-07-09T05:17:37.069Z info: No changes needed for 'ADMIN' role permissions
+2025-07-09T05:17:37.069Z info: Turnstile is DISABLED (no siteKey provided).
+2025-07-09T05:17:37.097Z info: Server listening at http://localhost:3080
+2025-07-09T05:17:45.826Z info: [Login] [Login successful] [Username: aradhanasinghmcscet@gmail.com] [Request-IP: ::1]
+2025-07-09T05:17:58.111Z info: Listed 8 CRUDServices
+2025-07-09T05:18:05.127Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:18:05.141Z info: Listed 8 CRUDServices
+2025-07-09T05:19:05.416Z info: Listed 8 CRUDServices
+2025-07-09T05:19:30.855Z info: Listed 8 CRUDServices
+2025-07-09T05:19:57.298Z info: Listed 8 CRUDServices
+2025-07-09T05:20:10.554Z info: Listed 8 CRUDServices
+2025-07-09T05:20:20.594Z info: Listed 8 CRUDServices
+2025-07-09T05:20:27.584Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:20:27.596Z info: Listed 8 CRUDServices
+2025-07-09T05:20:48.233Z info: Created CRUDService: 686dfc30aa5107340bba11c3
+2025-07-09T05:20:48.247Z info: Listed 9 CRUDServices
+2025-07-09T05:21:01.773Z info: Updated CRUDService: 686dd667176fa33387ee9585
+2025-07-09T05:21:01.935Z info: Listed 9 CRUDServices
+2025-07-09T05:21:25.145Z info: Updated CRUDService: 686d59514255aa9cf1d64c3b
+2025-07-09T05:21:25.162Z info: Listed 9 CRUDServices
+2025-07-09T05:21:45.704Z info: Updated CRUDService: 686d59564255aa9cf1d64c3d
+2025-07-09T05:21:45.719Z info: Listed 9 CRUDServices
+2025-07-09T05:22:01.638Z info: Created CRUDService: 686dfc79aa5107340bba11d2
+2025-07-09T05:22:01.655Z info: Listed 10 CRUDServices
+2025-07-09T05:22:15.710Z info: Created CRUDService: 686dfc87aa5107340bba11d6
+2025-07-09T05:22:15.729Z info: Listed 10 CRUDServices
+2025-07-09T05:22:43.745Z info: Created CRUDService: 686dfca3aa5107340bba11dc
+2025-07-09T05:22:43.757Z info: Listed 10 CRUDServices
+2025-07-09T05:23:30.397Z info: Listed 10 CRUDServices
+2025-07-09T05:23:56.457Z info: Listed 10 CRUDServices
+2025-07-09T05:24:11.834Z info: Listed 10 CRUDServices
+2025-07-09T05:24:55.932Z info: Listed 10 CRUDServices
+2025-07-09T05:25:07.965Z info: Listed 10 CRUDServices
+2025-07-09T05:25:09.953Z info: Listed 10 CRUDServices
+2025-07-09T05:25:11.291Z info: Listed 10 CRUDServices
+2025-07-09T05:25:21.062Z info: Listed 10 CRUDServices
+2025-07-09T05:25:37.572Z info: Listed 10 CRUDServices
+2025-07-09T05:25:39.380Z info: Listed 10 CRUDServices
+2025-07-09T05:26:13.586Z info: Listed 10 CRUDServices
+2025-07-09T05:26:19.554Z info: Listed 10 CRUDServices
+2025-07-09T05:26:19.576Z info: Listed 10 CRUDServices
+2025-07-09T05:26:52.053Z info: Listed 10 CRUDServices
+2025-07-09T05:26:55.704Z info: Listed 10 CRUDServices
+2025-07-09T05:26:57.179Z info: Listed 10 CRUDServices
+2025-07-09T05:26:58.765Z info: Listed 10 CRUDServices
+2025-07-09T05:27:37.942Z info: Listed 10 CRUDServices
+2025-07-09T05:27:38.759Z info: Listed 10 CRUDServices
+2025-07-09T05:27:48.851Z info: Listed 10 CRUDServices
+2025-07-09T05:27:49.944Z info: Listed 10 CRUDServices
+2025-07-09T05:27:51.612Z info: Listed 10 CRUDServices
+2025-07-09T05:27:52.470Z info: Listed 10 CRUDServices
+2025-07-09T05:27:53.083Z info: Listed 10 CRUDServices
+2025-07-09T05:27:53.878Z info: Listed 10 CRUDServices
+2025-07-09T05:27:57.636Z info: Listed 10 CRUDServices
+2025-07-09T05:27:59.969Z info: Listed 10 CRUDServices
+2025-07-09T05:28:00.859Z info: Listed 10 CRUDServices
+2025-07-09T05:28:50.819Z info: Listed 10 CRUDServices
+2025-07-09T05:29:24.630Z info: Listed 10 CRUDServices
+2025-07-09T05:30:30.365Z info: Listed 10 CRUDServices
+2025-07-09T05:30:46.891Z info: Listed 10 CRUDServices
+2025-07-09T05:30:49.931Z info: Listed 10 CRUDServices
+2025-07-09T05:30:55.798Z info: Listed 10 CRUDServices
+2025-07-09T05:33:39.974Z info: Listed 10 CRUDServices
+2025-07-09T06:11:38.084Z info: Listed 10 CRUDServices
+2025-07-09T06:22:36.717Z info: Listed 10 CRUDServices
