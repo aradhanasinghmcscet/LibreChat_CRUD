@@ -156,18 +156,19 @@ const ProductList: React.FC = () => {
   };
 
   const handleDeleteProduct = async (productId: string) => {
-    if (window.confirm('Are you sure you want to delete this product?')) {
+    const confirmDelete = window.confirm('Are you sure you want to delete this product?');
+    if (!confirmDelete) return;
       try {
         // Use the delete endpoint which performs soft delete
         await removeProduct('/api/products', productId);
-        setCurrentPage(1); 
-        await fetchProducts();
+        // Filter out the deleted product from the current list
+        setProducts(prevProducts => prevProducts.filter(p => p._id !== productId));
+        // await fetchProducts();
         console.log('Product deleted successfully', productId);
       } catch (error) {
         console.error('Error deleting product:', error);
         setLocalError('Failed to delete product');
       }
-    }
   };
 
   const handleEditProduct = (product: Product) => {
