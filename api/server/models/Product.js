@@ -6,10 +6,19 @@ const productSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
+  price: {
+    type: Number,
+    required: true,
+    min: 0
+  },
   quantity: {
     type: Number,
     required: true,
     default: 0
+  },
+  description: {
+    type: String,
+    default: ''
   },
   createdAt: {
     type: Date,
