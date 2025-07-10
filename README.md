@@ -12,9 +12,14 @@
   </h1>
 </p>
 <p>
+To start backend run "npm run backend:dev" from LibreChat_Crud. Or npm run dev from api directory. 
+<p>
+<p>
+To start frontend run "npm run frontend:dev" from LibreChat_Crud. Or npm run dev from client directory. 
+<p>
 To Open CRUD app in local post build start the backend and frontend server and navigate to localhost url - http://localhost:3090/c/products
 </p>
-<p>To run the unti test you need to run "npm run test command from client directory</p>
+<p>To run the unti test you need to run "npm run test" command from client directory</p>
 <p>To run the end to end test you need to run "npm run cypress:open" command from client directory</p>
 <p align="center">
   <a href="https://discord.librechat.ai"> 
