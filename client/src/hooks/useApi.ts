@@ -18,7 +18,7 @@ interface Product {
   updatedAt?: Date;
 }
 
-const API_URL = process.env.REACT_APP_API_URL || '/api';
+const API_URL = process.env.VITE_API_URL || 'http://localhost:3080/api';
 
 interface ApiMethods {
   create: (endpoint: string, data: any) => Promise<any>;
@@ -43,8 +43,17 @@ export const useApi = (): { loading: boolean; error: null } & ApiMethods => {
       const response = await axios({
         method,
         url,
-        data
+        data,
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        }
       });
+
+      // Check if we got HTML instead of JSON
+      if (typeof response.data === 'string' && response.data.includes('<html>')) {
+        throw new Error('API returned HTML instead of JSON. Please check if the API server is running and the URL is correct.');
+      }
       
       console.log('API Response:', {
         status: response.status,

@@ -41,7 +41,9 @@ const ProductList: React.FC = () => {
     create,
     read,
     update,
-    remove
+    remove,
+    list,
+    search
   } = useApi();
 
   const [products, setProducts] = useState<Product[]>([]);
@@ -64,38 +66,28 @@ const ProductList: React.FC = () => {
   const fetchProducts = async () => {
     try {
       setLoading(true);
-      console.log('Fetching products with page:', currentPage, 'limit:', productsPerPage);
       
-      // Try direct fetch to see raw response
-      const response = await fetch('/api/products', {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        }
-      });
+      // Use the list method from useApi with pagination parameters
+      const params = {
+        limit: productsPerPage,
+        skip: (currentPage - 1) * productsPerPage
+      };
       
-      const data = await response.json();
-      console.log('Raw API Response:', JSON.stringify(data, null, 2));
+      const data = await list('/products', params);
       
       // Handle different response formats
       const productsData = data?.items || data?.products || data || [];
       const total = data?.count || data?.total || productsData.length;
       
-      console.log('Processed data:', productsData);
+      console.log('Fetched products:', productsData);
       console.log('Total items:', total);
       
       // Calculate pagination
       const totalPages = Math.max(1, Math.ceil(total / productsPerPage));
-      console.log('Setting total pages:', totalPages);
       setTotalPages(totalPages);
       
-      // Update the products list
-      const start = (currentPage - 1) * productsPerPage;
-      const end = start + productsPerPage;
-      const paginatedProducts = productsData.slice(start, end);
-      console.log('Paginated products:', paginatedProducts);
-      
-      setProducts(paginatedProducts);
+      // Set the products directly from the API response
+      setProducts(productsData);
     } catch (error) {
       console.error('❌ Error fetching products:', error);
       setLocalError('Failed to fetch products');
