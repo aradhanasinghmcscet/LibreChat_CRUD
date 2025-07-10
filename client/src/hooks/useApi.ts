@@ -33,7 +33,7 @@ export const useApi = (): { loading: boolean; error: null } & ApiMethods => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<null>(null);
 
-  const makeRequest = async (method, endpoint, data = null, params = {}) => {
+  const makeRequest = async (method, endpoint, data = null, params: { id?: string | number } = {}) => {
     try {
       setLoading(true);
       // Convert params to query string
@@ -43,7 +43,7 @@ export const useApi = (): { loading: boolean; error: null } & ApiMethods => {
       const response = await axios({
         method,
         url,
-        data,
+        ...(method === 'delete' ? { data: { id: params.id } } : { data }),
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'

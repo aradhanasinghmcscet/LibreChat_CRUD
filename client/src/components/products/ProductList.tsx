@@ -153,11 +153,11 @@ const ProductList: React.FC = () => {
   const handleDeleteProduct = async (id: string) => {
     if (window.confirm('Are you sure you want to delete this product?')) {
       try {
-        await remove('/products', id);
-        await fetchProducts(); // updated server data
-      } catch (error) {
+        await remove('/products', id); // Use the correct endpoint with ID in URL
+        await fetchProducts(); // Refresh the list after successful deletion
+      } catch (error: any) {
         console.error('❌ Error deleting product:', error);
-        setLocalError('Failed to delete product');
+        setLocalError(error.response?.data?.error || 'Failed to delete product');
       }
     }
   };
