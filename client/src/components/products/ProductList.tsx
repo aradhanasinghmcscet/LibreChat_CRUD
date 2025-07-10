@@ -307,9 +307,9 @@ const ProductList: React.FC = () => {
             disabled={loading}
             sx={{
               '& .MuiPaginationItem-root': {
-                color: '#fff',
+                color: '#0e989f',
                 '&:hover': {
-                  backgroundColor: 'rgba(0,0,0,0.1)'
+                  backgroundColor: 'rgba(14, 152, 159, 0.1)'
                 }
               }
             }}
